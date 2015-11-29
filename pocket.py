@@ -14,5 +14,9 @@ def home():
     return render_template('home.html')
 
 
+@app.route("/ch_home")
+def channel_landing():
+    return render_template('channel_landing.html')
+
 if __name__ == "__main__":
     app.run(debug=True)

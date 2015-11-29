@@ -25,6 +25,8 @@ $retina-screen: 320px;
 body {
 	@media (max-width: $medium-screen) {
     }
+    background: #e3e5e7;
+    color: #333;
 }
 
 body {
@@ -77,6 +79,37 @@ body {
 .mktng-subc {
 	.subs {
 		padding:10em;
+	}
+}
+.player-cont {
+	background: #222;
+	color: #efefef;
+	height:38em;
+	.listing {
+		padding-left:1em!important;
+		height:38em;
+		overflow-y: scroll;
+		direction: ltr;
+		ul {
+			list-style: none;
+		    padding-left: 5px;
+		    color: #cdcdcd;
+		    li {
+		    	padding:5px 5px;
+		    	small {
+		    		display: block;
+		    		font-size: 0.7em;
+		    		color: #999;
+		    	}
+		    	&:hover {
+		    		background: #9c9c9c;
+		    		color: #333;
+		    		small {
+		    			color: #444;
+		    		}
+		    	}
+		    }
+		}
 	}
 }
 
@@ -133,7 +166,7 @@ body {
 }
 
 footer {
-	height:5em;
-	background: #0f75bc;
+	height:10em;
+	background: #1babe2;
 	color: white;
 }
