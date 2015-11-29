@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block header %}
+<div class="jumbotron text-center">
+
+</div>
+{% endblock %}
+
+{% block body %}
+    <div class="row no-pad">
+    	<div class="col-md-4">
+    		<div class="mktng-card">
+    			<img class="" style="width: 100%;" src="{{ url_for('static', filename='images/breakingbad.jpg') }}" alt="">
+    			<h2>Breaking Bad</h2>
+    			<p>Badass stuff for badass people</p>
+    		</div>
+    	</div>
+    	<div class="col-md-4">
+    		<div class="mktng-card">
+    			<img class="" src="{{ url_for('static', filename='images/friends.jpg') }}" alt="">
+    			<h2>FRIENDS</h2>
+    			<p>Badass stuff for badass people</p>
+    		</div>
+    		<div class="mktng-card">
+    			<img class="" style="height:232px;width:100%;" src="{{ url_for('static', filename='images/vikings.jpg') }}" alt="">
+    			<h2>Vikings Show</h2>
+    			<p>Badass stuff for badass people</p>
+    		</div>
+    	</div>
+    	<div class="col-md-4">
+    		<div class="mktng-card" style="min-height:222px;">
+    			<img class="" style="height:222px;width:100%;" src="{{ url_for('static', filename='images/humsafar.png') }}" alt="">
+    			<h2>Hamsafar (Urdu)</h2>
+    			<p>Badass stuff for badass people</p>
+    		</div>
+    		<div class="mktng-card">
+    			<img class="" style="height:316px;" src="{{ url_for('static', filename='images/narcos.jpg') }}" alt="">
+    			<h2>Narcos</h2>
+    			<p>Badass stuff for badass people</p>
+    		</div>
+    	</div>
+    </div>
+    <div class="row mktng-subc">
+    	<div class="col-md-6 subs text-center">
+    		<h1>Become a subscriber</h1>
+    		<p>Subscribe now and get access to all the premium content</p>
+    		<button class="btn btn-lg btn-primary">Subscribe Now</button>
+    	</div>
+    	<div class="col-md-6">
+    		<img class="img-responsive" src="{{ url_for('static', filename='images/mobile.png') }}" alt="">
+    	</div>
+    </div>
+    <br><br>
+{% endblock %}
+
+{% block footer %}
+<footer>
+	
+</footer>
+{% endblock %}
