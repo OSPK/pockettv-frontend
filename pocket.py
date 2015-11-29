@@ -18,5 +18,10 @@ def home():
 def channel_landing():
     return render_template('channel_landing.html')
 
+
+@app.route("/vod_cat_landing")
+def vod_cat_landing():
+    return render_template('vod_cat_landing.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
