@@ -19,52 +19,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('.video-slider').slick({
-        centerPadding: '60px',
-        slidesToShow: 6,
-        infinite: true,
-        draggable: true,
-
-        responsive: [{
-            breakpoint: 1200,
-            settings: {
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 6
-            }
-        }, {
-            breakpoint: 992,
-            settings: {
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 5
-            }
-        }, {
-            breakpoint: 768,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
-            }
-        }, {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 2
-            }
-        }, {
-            breakpoint: 320,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
-            }
-        }]
-    });
+    
 
     $('.chan-slider').slick({
         centerMode: true,
