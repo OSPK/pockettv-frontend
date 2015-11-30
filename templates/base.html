@@ -3,11 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 		<title>Title Page</title>
 		
 		<!-- Slick http://kenwheeler.github.io/slick/ -->
-		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.transitions.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.css') }}">
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.scss.css') }}">
 
@@ -34,8 +36,8 @@
 		<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-		<!-- Slick http://kenwheeler.github.io/slick/ -->
-		<script src="{{ url_for('static', filename='js/slick.min.js') }}"></script>
+		<!-- owl.carousel.js -->
+		<script src="{{ url_for('static', filename='js/owl.carousel.js') }}"></script>
 		<!-- JavaScript -->
 		<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 	</body>

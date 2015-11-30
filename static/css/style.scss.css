@@ -5972,6 +5972,8 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
         transition-duration: 0.2s; }
     .video-slider .slide img, .chan-slider .slide img {
       width: 100%;
+      display: block;
+      height: auto;
       position: relative; }
 
 .chan-slider .slide img {
