@@ -5900,8 +5900,8 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 
 .premium {
   color: #E5C70D !important;
-  right: 10px;
-  bottom: 10px;
+  left: 10px;
+  bottom: 2px;
   position: absolute; }
 
 .mktng-card {
@@ -5961,13 +5961,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
             color: #444; }
 
 .video-slider, .chan-slider {
-  margin: 0 -15px !important;
-  margin-bottom: 2em !important;
-  width: 105%;
-  /* Extra Small Devices, Phones */ }
-  @media only screen and (max-width: 480px) {
-    .video-slider, .chan-slider {
-      width: 115%; } }
+  margin-bottom: 2em; }
   .video-slider .slick-prev:before, .video-slider .slick-next:before, .chan-slider .slick-prev:before, .chan-slider .slick-next:before {
     color: black;
     font-size: 30px; }
@@ -6009,11 +6003,50 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
       .video-slider .slide .cover:hover, .chan-slider .slide .cover:hover {
         opacity: 1;
         transition-duration: 0.2s; }
+      .video-slider .slide .cover .buttons, .chan-slider .slide .cover .buttons {
+        position: absolute;
+        right: 5px;
+        bottom: 5px; }
     .video-slider .slide img, .chan-slider .slide img {
       width: 100%;
       display: block;
       height: auto;
       position: relative; }
+
+.owl-prev {
+  position: absolute;
+  left: -30px;
+  top: 0px;
+  border-radius: 0px;
+  width: 33px;
+  height: 100%;
+  background: #21282e !important; }
+  .owl-prev i {
+    position: absolute;
+    top: 45%;
+    right: 2px; }
+
+.owl-next {
+  position: absolute;
+  right: -30px;
+  top: 0px;
+  border-radius: 0px;
+  width: 33px;
+  height: 100%;
+  background: #21282e !important; }
+  .owl-next i {
+    position: absolute;
+    top: 45%;
+    left: 2px; }
+
+.owl-theme .owl-controls .owl-buttons div {
+  border-radius: 0px;
+  padding: 0px;
+  margin: 0px;
+  opacity: 1; }
+
+.owl-theme .owl-controls {
+  margin-top: 0px; }
 
 .chan-slider .slide img {
   width: 200px;
