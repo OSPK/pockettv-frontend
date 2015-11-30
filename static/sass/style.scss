@@ -37,21 +37,32 @@ $premium: #E5C70D;
     font-family: "HelveticaNeue";
     src: url("../fonts/HelveticaNeue.ttf");
 }
-
+@font-face {
+    font-family: "Telenor Light";
+    src: url("../fonts/telenorlight.ttf");
+}
+@font-face {
+    font-family: "Telenor Bold";
+    src: url("../fonts/telenorbold.ttf");
+}
+@font-face {
+    font-family: "Telenor";
+    src: url("../fonts/telenor.ttf");
+}
 * {
 
 }
 body {
     background: #e3e5e7;
     color: #333;
-    padding-top: 50px;
+    padding-top: 40px;
 	font-size: 14px;
 	overflow-x: hidden;
-	font-family: "HelveticaNeue";
+	font-family: "Telenor";
 }
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
-	font-family: "HelveticaNeue";
+	font-family: "Telenor Bold";
 }
 .jumbotron {
 	color:white;
@@ -67,12 +78,6 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 }
 .page-header {
   border-bottom: 1px solid $sep-grey;
-}
-.premium {
-	color: $premium !important;
-	left: 10px;
-	bottom: 2px;
-	position: absolute;
 }
 .mktng-card {
 	position: relative;
@@ -174,6 +179,12 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 	.slick-next, .slick-prev {
 		width: 50px;
 		height: 100%;
+	}
+	.premium {
+		color: $premium !important;
+		left: 10px;
+		bottom: 2px;
+		position: absolute;
 	}
 	.slide {
 		padding:1px;
@@ -301,16 +312,16 @@ select.genre {
 		float:left;
 		clear:both;
 		img {
-			max-height: 50px;
+			max-height: 30px;
 		    margin: 0px;
-		    margin-top: -15px;
-		    max-width: 50px;
+		    margin-top: -7px;
+		    max-width: 30px;
 
 		}
 	}
 	span.text {
-		margin-left:10px;
-		padding-top:10px;
+		margin-left:5px;
+		padding-top:5px;
 	}
 }
 

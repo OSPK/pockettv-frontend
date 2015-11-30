@@ -26,7 +26,7 @@ $(document).ready(function() {
         autoPlay: false, //Set AutoPlay to 3 seconds
         pagination: false,
         navigation: true,
-        navigationText: ["",""],
+        navigationText: ["<i class='glyphicon glyphicon-chevron-left'></i>","<i class='glyphicon glyphicon-chevron-right'></i>"],
         items: 5.3,
         itemsDesktop: [1199, 5.3],
         itemsDesktopSmall: [979, 4.3],

@@ -36,5 +36,10 @@ def vod_cat_landing():
 def tv_guide():
     return render_template('tv_guide.html')
 
+
+@app.route("/channel_program_listing")
+def channel_program_listing():
+    return render_template('channel_program_listing.html')
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
