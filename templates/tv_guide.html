@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block header %}
+<style>
+
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+	<h1>TV Guide</h1>
+	<div class="table-responsive">
+		<table class="table tv_guide_table">
+			<thead>
+				<tr class="row">
+					<th class="col-md-2">
+						Channel
+					</th>
+					<th class="col-md-5">
+						Now
+					</th>
+					<th class="col-md-5">
+						Later
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="row">
+					<th class="col-md-2">
+						<img class="img-responsive img-thumbnail" src="http://lorempixel.com/300/200/?{{random()}}">
+					</th>
+					<td class="col-md-5">
+						<h2>Weather Center</h2>
+						<small class="text-muted">7:00 – 10:00p</small>
+						<p>An in-depth examination of the day's top weather stories.</p>
+						<button class="btn btn-danger btn-xs pull-right">Watch Now</button>
+					</td>
+					<td class="col-md-5">
+						<h2>Weather Center</h2>
+						<small>7:00 – 10:00p</small>s
+						<p>An in-depth examination of the in-depth examination of the day's top weather stories that made i to the newws.</p>
+						<button class="btn btn-default btn-xs pull-right">Full Schedule</button>
+					</td>
+				</tr>
+				<tr class="row">
+					<th class="col-md-2">
+						<img class="img-responsive img-thumbnail" src="http://lorempixel.com/300/200/?{{random()}}">
+					</th>
+					<td class="col-md-5">
+						<h2>Weather Center</h2>
+						<small>7:00 – 10:00p</small>
+						<p>An in-depth examination of the day's top weather stories.</p>
+						<button class="btn btn-danger btn-xs pull-right">Watch Now</button>
+					</td>
+					<td class="col-md-5">
+						<h2>Weather Center</h2>
+						<small>7:00 – 10:00p</small>s
+						<p>An in-depth examination of the in-depth examination of the day's top weather stories that made i to the newws.</p>
+						<button class="btn btn-default btn-xs pull-right">Full Schedule</button>
+					</td>
+				</tr>
+				<tr class="row">
+					<th class="col-md-2">
+						<img class="img-responsive img-thumbnail" src="http://lorempixel.com/300/200/?{{random()}}">
+					</th>
+					<td class="col-md-5">
+						<h2>Weather Center</h2>
+						<small>7:00 – 10:00p</small>
+						<p>An in-depth examination of the day's top weather stories.</p>
+						<button class="btn btn-danger btn-xs pull-right">Watch Now</button>
+					</td>
+					<td class="col-md-5">
+						<h2>Weather Center</h2>
+						<small>7:00 – 10:00p</small>s
+						<p>An in-depth examination of the in-depth examination of the day's top weather stories that made i to the newws.</p>
+						<button class="btn btn-default btn-xs pull-right">Full Schedule</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+{% endblock %}

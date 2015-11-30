@@ -48,7 +48,14 @@ $retina-screen: 320px;
 }
 
 /* COLORS */
-$red: #F02F2F;
+$brand-primary:         #159fd1; // #337ab7
+$brand-success:         #8cc641;
+$brand-info:            #20409a;
+$brand-warning:         #f15d23;
+$brand-danger:          #ed2a29;
+$sep-grey: #D6D6D6;
+$charcoal: #21282e;
+
 
 @font-face {
     font-family: "HelveticaNeue";
@@ -82,6 +89,10 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   padding: 40px 15px;
   text-align: center;
 }
+.page-header {
+  border-bottom: 1px solid $sep-grey;
+}
+
 .mktng-card {
 	position: relative;
 	width:100%;
@@ -118,7 +129,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 	}
 }
 .player-cont {
-	background: #222;
+	background: $charcoal;
 	color: #efefef;
 	overflow-y: hidden;
 	img {
@@ -128,7 +139,8 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 	.listing {
 		padding-left:1em!important;
 		overflow-y: scroll;
-		direction: ltr;
+		direction: rtl;
+		text-align: left;
 		ul {
 			list-style: none;
 		    padding-left: 5px;
@@ -218,6 +230,37 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 	}
 }
 
+.tv_guide_table {
+	&.table {
+		thead {
+			th {
+				text-align: center;
+			}
+		}
+		tbody {
+			tr {
+				td {
+					padding-left:3em;
+					padding-right:3em;
+					margin:3px;
+					&:nth-child(2) {
+						background:white;
+						button {
+							visibility:hidden;
+						}
+						&:hover {
+							button {
+								visibility:visible;
+							}
+							background: $brand-info;
+							color: white;
+						}
+					}
+				}
+			}
+		}
+	}	
+}
 
 select.genre {
 	width:14em;

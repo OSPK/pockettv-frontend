@@ -12,6 +12,11 @@ def welcome():
     return render_template('index.html')
 
 
+@app.route("/sink")
+def sink():
+    return render_template('kitchensink.html')
+
+
 @app.route("/home")
 def home():
     return render_template('home.html')
@@ -25,6 +30,11 @@ def channel_landing():
 @app.route("/vod_cat_landing")
 def vod_cat_landing():
     return render_template('vod_cat_landing.html')
+
+
+@app.route("/tv_guide")
+def tv_guide():
+    return render_template('tv_guide.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
