@@ -7,7 +7,7 @@ $(".player_container, #channel_landing .listing").height(channel_landing_height)
 $(document).ready(function() {
     $('.video-slider').slick({
         centerPadding: '60px',
-        slidesToShow: 4,
+        slidesToShow: 6,
         infinite: true,
         draggable: true,
 
@@ -16,14 +16,14 @@ $(document).ready(function() {
             settings: {
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 4
+                slidesToShow: 6
             }
         }, {
             breakpoint: 992,
             settings: {
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 3
+                slidesToShow: 5
             }
         }, {
             breakpoint: 768,
