@@ -1,6 +1,8 @@
-var channel_landing_height = $("#channel_landing .player").height();
-$(".player_container, #channel_landing .listing").height(channel_landing_height);
-
+if ($(window).width()>768) {
+    var channel_landing_height = $("#channel_landing .player").height();
+    $(".player_container, #channel_landing .listing").height(channel_landing_height);
+};
+alert($(window).width());
 // jQuery(window).load(function() {
 // });
 
