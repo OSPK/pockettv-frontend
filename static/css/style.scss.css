@@ -5963,7 +5963,11 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 .video-slider, .chan-slider {
   margin: 0 -15px !important;
   margin-bottom: 2em !important;
-  width: 110%; }
+  width: 105%;
+  /* Extra Small Devices, Phones */ }
+  @media only screen and (max-width: 480px) {
+    .video-slider, .chan-slider {
+      width: 115%; } }
   .video-slider .slick-prev:before, .video-slider .slick-next:before, .chan-slider .slick-prev:before, .chan-slider .slick-next:before {
     color: black;
     font-size: 30px; }

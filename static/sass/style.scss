@@ -150,7 +150,11 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 .video-slider, .chan-slider {	
 	margin:0 -15px!important;
 	margin-bottom: 2em!important;
-	 width: 110%;
+	 width: 105%;
+	 /* Extra Small Devices, Phones */ 
+		@media only screen and (max-width : $phone-screen) {
+			width: 115%;
+		}
 	.slick-prev:before, .slick-next:before {
 		color: black;
 		font-size: 30px;
