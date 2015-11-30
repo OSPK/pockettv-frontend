@@ -1,8 +1,11 @@
 from flask import Flask
 from flask import redirect, url_for, render_template, flash, request, json,\
     jsonify, Response, escape, abort
+from random import random
+
 app = Flask(__name__)
 
+app.jinja_env.globals.update(random=random)
 
 @app.route("/")
 def welcome():

@@ -40,15 +40,22 @@
 
 {% block body %}
 <div class="container-fluid">
-    {% include 'component_chan-slider.html' %}
-    <hr>
-    <h3>Most Popular</h3>
+    <br>
+    <div class="clearfix">
+        <div class="dropdown pull-right">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Choose Category <span class="caret"></span></button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Adventure</a></li>
+                <li><a href="#">Comedy</a></li>
+                <li><a href="#">Romance</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
     {% include 'component_video-slider.html' %}
-    <h3>Most Popular</h3>
     {% include 'component_video-slider.html' %}
-    <h3>Most Popular</h3>
     {% include 'component_video-slider.html' %}
-    <h3>Most Popular</h3>
     {% include 'component_video-slider.html' %}
     <hr><br>
 </div>

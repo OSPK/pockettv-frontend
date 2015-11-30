@@ -5825,19 +5825,37 @@ button.close {
   padding-right: 0;
   padding-left: 0; }
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
-body {
-  background: #e3e5e7;
-  color: #333; }
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/* COLORS */
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue.ttf"); }
 
 body {
+  background: #e3e5e7;
+  color: #333;
   padding-top: 50px;
   font-size: 14px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: "HelveticaNeue"; }
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+  font-family: "HelveticaNeue"; }
 
 .jumbotron {
   color: white;
@@ -5881,10 +5899,12 @@ body {
 .player-cont {
   background: #222;
   color: #efefef;
-  height: 38em; }
+  overflow-y: hidden; }
+  .player-cont img {
+    width: 100%;
+    position: relative; }
   .player-cont .listing {
     padding-left: 1em !important;
-    height: 38em;
     overflow-y: scroll;
     direction: ltr; }
     .player-cont .listing ul {
@@ -5903,25 +5923,59 @@ body {
           .player-cont .listing ul li:hover small {
             color: #444; }
 
-.rowlist .item .thumb {
-  width: 16.6666666667%;
-  cursor: pointer;
-  float: left; }
+.video-slider, .chan-slider {
+  position: relative; }
+  .video-slider .slick-prev:before, .video-slider .slick-next:before, .chan-slider .slick-prev:before, .chan-slider .slick-next:before {
+    color: black;
+    font-size: 30px; }
+  .video-slider .slick-arrow, .chan-slider .slick-arrow {
+    text-shadow: 1px 1px 9px #121212; }
+  .video-slider .slick-prev, .chan-slider .slick-prev {
+    left: -15px;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(to left, transparent, black); }
+  .video-slider .slick-next, .chan-slider .slick-next {
+    right: -15px;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(to right, transparent, black); }
+  .video-slider .slick-list, .chan-slider .slick-list {
+    overflow: visible; }
+  .video-slider .slick-next, .video-slider .slick-prev, .chan-slider .slick-next, .chan-slider .slick-prev {
+    width: 50px;
+    height: 100%; }
+  .video-slider .slide, .chan-slider .slide {
+    padding: 1px;
+    position: relative; }
+    .video-slider .slide .cover, .chan-slider .slide .cover {
+      opacity: 0;
+      display: inline-block;
+      position: absolute;
+      padding: 0.7em 1em;
+      top: 0px;
+      left: 0px;
+      background: rgba(0, 0, 0, 0.74);
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9), 0px 0px 7px rgba(0, 0, 0, 0.4);
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      color: white;
+      overflow: hidden; }
+      .video-slider .slide .cover:hover, .chan-slider .slide .cover:hover {
+        opacity: 1;
+        transition-duration: 0.2s; }
+    .video-slider .slide img, .chan-slider .slide img {
+      width: 100%;
+      position: relative; }
 
-.rowlist .item .thumb img, .rowlist .item img {
-  width: 100%;
-  padding: 1px; }
-
-.chanlist .item .thumb {
-  width: 20%;
-  cursor: pointer;
-  float: left; }
-
-.chanlist .item .thumb img, .chanlist .item img {
-  width: 100%;
+.chan-slider .slide img {
+  width: 200px;
   height: 100px; }
 
-/* CSS used here will be applied after bootstrap.css */
+select.genre {
+  width: 14em; }
+
 .navbar-brand {
   width: 200px; }
   .navbar-brand span.logo {
