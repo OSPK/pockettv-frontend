@@ -22,31 +22,6 @@ $phone-screen: 480px;
 
 $retina-screen: 320px;
 
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width : $retina-screen) {
-    
-}
-
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width : $phone-screen) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : $tablet-screen) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : $medium-screen) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : $large-screen) {
-
-}
-
 /* COLORS */
 $brand-primary:         #159fd1; // #337ab7
 $brand-success:         #8cc641;
@@ -55,6 +30,7 @@ $brand-warning:         #f15d23;
 $brand-danger:          #ed2a29;
 $sep-grey: #D6D6D6;
 $charcoal: #21282e;
+$premium: #E5C70D;
 
 
 @font-face {
@@ -92,7 +68,12 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 .page-header {
   border-bottom: 1px solid $sep-grey;
 }
-
+.premium {
+	color: $premium !important;
+	right: 10px;
+	bottom: 10px;
+	position: absolute;
+}
 .mktng-card {
 	position: relative;
 	width:100%;
@@ -296,4 +277,30 @@ footer {
 	height:10em;
 	background: #1babe2;
 	color: white;
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : $retina-screen) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : $phone-screen) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : $tablet-screen) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : $medium-screen) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : $large-screen) {
+
 }

@@ -5836,11 +5836,6 @@ button.close {
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-/* Large Devices, Wide Screens */
 /* COLORS */
 @font-face {
   font-family: "HelveticaNeue";
@@ -5871,6 +5866,12 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 
 .page-header {
   border-bottom: 1px solid #D6D6D6; }
+
+.premium {
+  color: #E5C70D !important;
+  right: 10px;
+  bottom: 10px;
+  position: absolute; }
 
 .mktng-card {
   position: relative;
@@ -6018,3 +6019,9 @@ footer {
   height: 10em;
   background: #1babe2;
   color: white; }
+
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */

@@ -7,8 +7,7 @@ $(".player_container, #channel_landing .listing").height(channel_landing_height)
 $(document).ready(function() {
     $('.video-slider').slick({
         centerPadding: '60px',
-        slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToShow: 4,
         infinite: true,
         draggable: true,
 
@@ -17,16 +16,14 @@ $(document).ready(function() {
             settings: {
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 5,
-                slidesToScroll: 5
+                slidesToShow: 4
             }
         }, {
             breakpoint: 992,
             settings: {
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 4,
-                slidesToScroll: 4,
+                slidesToShow: 3
             }
         }, {
             breakpoint: 768,
@@ -34,8 +31,7 @@ $(document).ready(function() {
                 arrows: false,
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 3,
-                slidesToScroll: 3
+                slidesToShow: 2
             }
         }, {
             breakpoint: 480,
@@ -43,8 +39,7 @@ $(document).ready(function() {
                 arrows: false,
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 2
             }
         }, {
             breakpoint: 320,
@@ -52,8 +47,7 @@ $(document).ready(function() {
                 arrows: false,
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToShow: 1
             }
         }]
     });
