@@ -145,9 +145,11 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 	}
 }
 
-.video-slider, .chan-slider {
-	position: relative;
-	margin-bottom: 2em;
+
+.video-slider, .chan-slider {	
+	margin:0 -15px!important;
+	margin-bottom: 2em!important;
+	 width: 105%;
 	.slick-prev:before, .slick-next:before {
 		color: black;
 		font-size: 30px;
