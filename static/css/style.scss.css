@@ -5929,7 +5929,8 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
             color: #444; }
 
 .video-slider, .chan-slider {
-  position: relative; }
+  position: relative;
+  margin-bottom: 2em; }
   .video-slider .slick-prev:before, .video-slider .slick-next:before, .chan-slider .slick-prev:before, .chan-slider .slick-next:before {
     color: black;
     font-size: 30px; }
