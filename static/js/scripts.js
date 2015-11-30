@@ -8,7 +8,7 @@ $(document).ready(function() {
  
   $(".video-slider").owlCarousel({
  
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      autoPlay: false, //Set AutoPlay to 3 seconds
       pagination: false,
       items : 5,
       itemsDesktop : [1199,5],
@@ -19,7 +19,7 @@ $(document).ready(function() {
   });
   $(".chan-slider").owlCarousel({
  
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      autoPlay: false, //Set AutoPlay to 3 seconds
       pagination: false,
       items : 5,
       itemsDesktop : [1199,5],
