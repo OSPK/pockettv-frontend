@@ -42,6 +42,12 @@ def tv_guide():
 def channel_program_listing():
     return render_template('channel_program_listing.html')
 
+
+@app.route("/subscribe_plans")
+def subscribe_plans():
+    return render_template('subscribe_plans.html')
+
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
 
