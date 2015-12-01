@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block body %}
-    <div class="row row-eq-height no-pad">
+    <div class="row row-eq-height no-pad home-bricks">
     	<div class="col-md-4">
     		<div class="mktng-card">
             <img class="img-responsive" src="{{ url_for('static', filename='images/breakingbad.jpg') }}" alt="">
@@ -35,6 +35,14 @@
                     <a class="btn btn-warning"><i class="glyphicon glyphicon-play"></i> Play</a>
                 </div>
     		</div>
+            <div class="mktng-card">
+                <img class="img-responsive" src="{{ url_for('static', filename='images/vikings.jpg') }}" alt="">
+                <div class="mask">
+                    <h2>Another Show</h2>
+                    <p class="thin">Viking Ragnar Lothbrok is a young farmer and family man who is frustrated by the policies of Earl Haraldson...</p>
+                    <a class="btn btn-warning"><i class="glyphicon glyphicon-play"></i> Play</a>
+                </div>
+            </div>
     	</div>
     	<div class="col-md-4">
     		<div class="mktng-card">
@@ -53,8 +61,18 @@
                     <a class="btn btn-warning"><i class="glyphicon glyphicon-play"></i> Play</a>
                 </div>
     		</div>
+            <div class="mktng-card">
+                <img class="img-responsive" src="{{ url_for('static', filename='images/friends.jpg') }}" alt="">
+                <div class="mask">
+                    <h2>One More Show</h2>
+                    <p class="thin">Three young men and three young women - of the BFF kind - live in the same apartment complex and face life and love in New York. They're not above sticking their noses into one another's businesses and...</p>
+                    <a class="btn btn-warning"><i class="glyphicon glyphicon-play"></i> Play</a>
+                </div>
+            </div>
     	</div>
     </div>
+    <a href="" class="btn btn-xs btn-block btn-info">View All Videos</a>
+    <br><br>
     <div class="row mktng-subc">
     	<div class="col-md-6 subs text-center">
     		<h1>Become a subscriber</h1>

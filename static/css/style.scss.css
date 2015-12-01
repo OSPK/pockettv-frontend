@@ -5876,6 +5876,10 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 .page-header {
   border-bottom: 1px solid #D6D6D6; }
 
+.home-bricks {
+  max-height: 600px;
+  overflow: hidden; }
+
 .mktng-card {
   position: relative;
   width: 100%; }
