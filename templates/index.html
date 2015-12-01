@@ -7,36 +7,51 @@
 {% endblock %}
 
 {% block body %}
-    <div class="row no-pad">
+    <div class="row row-eq-height no-pad">
     	<div class="col-md-4">
     		<div class="mktng-card">
-    			<img class="" style="width: 100%;" src="{{ url_for('static', filename='images/breakingbad.jpg') }}" alt="">
-    			<h2>Breaking Bad</h2>
-    			<p>Badass stuff for badass people</p>
+            <img class="img-responsive" src="{{ url_for('static', filename='images/breakingbad.jpg') }}" alt="">
+    			<div class="mask">
+                    <h2>Breaking Bad</h2>
+                    <p class="thin">Mild-mannered high school chemistry teacher Walter White thinks his life can't get much worse. His salary barely makes ends meet, a situation not likely to improve once his pregnant wife gives birth, and their teenage son is battling cerebral palsy. But Walter is dumbstruck when he learns he has ter…</p>
+                    <a class="btn btn-warning"><i class="glyphicon glyphicon-play"></i> Play</a>
+                </div>
     		</div>
     	</div>
     	<div class="col-md-4">
     		<div class="mktng-card">
-    			<img class="" src="{{ url_for('static', filename='images/friends.jpg') }}" alt="">
-    			<h2>FRIENDS</h2>
-    			<p>Badass stuff for badass people</p>
+    			<img class="img-responsive" src="{{ url_for('static', filename='images/friends.jpg') }}" alt="">
+                <div class="mask">
+        			<h2>FRIENDS</h2>
+        			<p class="thin">Three young men and three young women - of the BFF kind - live in the same apartment complex and face life and love in New York. They're not above sticking their noses into one another's businesses and...</p>
+                    <a class="btn btn-warning"><i class="glyphicon glyphicon-play"></i> Play</a>
+                </div>
     		</div>
     		<div class="mktng-card">
-    			<img class="" style="height:232px;width:100%;" src="{{ url_for('static', filename='images/vikings.jpg') }}" alt="">
-    			<h2>Vikings Show</h2>
-    			<p>Badass stuff for badass people</p>
+    			<img class="img-responsive" src="{{ url_for('static', filename='images/vikings.jpg') }}" alt="">
+                <div class="mask">
+        			<h2>Vikings Show</h2>
+        			<p class="thin">Viking Ragnar Lothbrok is a young farmer and family man who is frustrated by the policies of Earl Haraldson...</p>
+                    <a class="btn btn-warning"><i class="glyphicon glyphicon-play"></i> Play</a>
+                </div>
     		</div>
     	</div>
     	<div class="col-md-4">
-    		<div class="mktng-card" style="min-height:222px;">
-    			<img class="" style="height:222px;width:100%;" src="{{ url_for('static', filename='images/humsafar.png') }}" alt="">
-    			<h2>Hamsafar (Urdu)</h2>
-    			<p>Badass stuff for badass people</p>
+    		<div class="mktng-card">
+    			<img class="img-responsive" src="{{ url_for('static', filename='images/humsafar.png') }}" alt="">
+                <div class="mask">
+        			<h2>Hamsafar (Urdu)</h2>
+        			<p class="thin">Woh Hamsafar that magar uss say hamnawai na thi.</p>
+                    <a class="btn btn-warning"><i class="glyphicon glyphicon-play"></i> Play</a>
+                </div>
     		</div>
     		<div class="mktng-card">
-    			<img class="" style="height:316px;" src="{{ url_for('static', filename='images/narcos.jpg') }}" alt="">
-    			<h2>Narcos</h2>
-    			<p>Badass stuff for badass people</p>
+    			<img class="img-responsive" src="{{ url_for('static', filename='images/narcos.jpg') }}" alt="">
+                <div class="mask">
+        			<h2>Narcos</h2>
+        			<p class="thin">Netflix takes on the infamous Medellín drug cartel in "Narcos," which follows the rise and fall of Colombian kingpin Pablo Escobar</p>
+                    <a class="btn btn-warning"><i class="glyphicon glyphicon-play"></i> Play</a>
+                </div>
     		</div>
     	</div>
     </div>

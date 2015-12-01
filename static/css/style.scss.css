@@ -5858,6 +5858,9 @@ body {
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   font-family: "Telenor Bold"; }
 
+.thin {
+  font-family: "Telenor Light"; }
+
 .jumbotron {
   color: white;
   background-color: #333;
@@ -5875,27 +5878,25 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 
 .mktng-card {
   position: relative;
-  width: 100%;
-  padding: 1em;
-  min-height: 307px;
-  max-height: 539px; }
-  .mktng-card img {
+  width: 100%; }
+  .mktng-card .mask {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    max-height: 539px;
-    max-width: 100%;
-    opacity: 0.8; }
-  .mktng-card h2, .mktng-card p {
-    position: relative;
-    z-index: 99;
     width: 100%;
-    text-align: left;
+    height: 100%;
+    top: 0px;
+    left: 0px;
     color: white;
-    text-shadow: 0px 0px 5px black,0px 0px 5px black,0px 0px 5px black; }
-  .mktng-card:hover img {
-    opacity: 1; }
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-shadow: 0px 0px 2px black; }
+    .mktng-card .mask a {
+      visibility: hidden; }
+  .mktng-card:hover .mask {
+    background: rgba(0, 0, 0, 0.9); }
+    .mktng-card:hover .mask a {
+      visibility: visible; }
 
 .mktng-subc .subs {
   padding: 10em; }
