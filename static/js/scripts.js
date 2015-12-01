@@ -1,7 +1,9 @@
-if ($(window).width() > 768) {
-    var channel_landing_height = $("#channel_landing .player").height();
-    $(".player_container, #channel_landing .listing").height(channel_landing_height);
-};
+var device_width = $(window).width();
+// if (device_width > 768) {
+//     var channel_landing_height = $("#channel_landing .player").height();
+//     $(".player_container, #channel_landing .listing").height(channel_landing_height);
+// };
+
 jQuery(window).load(function() {
     
 });

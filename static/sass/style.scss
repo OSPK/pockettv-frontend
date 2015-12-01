@@ -127,7 +127,10 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 		overflow-y: scroll;
 		direction: rtl;
 		text-align: left;
-		height:200px;
+		  max-height: 550px;
+		@media only screen and (max-width : $tablet-screen) {
+			height:200px;
+		}
 		ul {
 			list-style: none;
 		    padding-left: 5px;
@@ -141,7 +144,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 		    	}
 		    	&:hover {
 		    		background: #9c9c9c;
-		    		color: #333;
+		    		color: $charcoal;
 		    		small {
 		    			color: #444;
 		    		}
@@ -270,35 +273,38 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 }
 
 .tv_guide_table {
-	&.table {
-		thead {
-			th {
-				text-align: center;
-			}
+	.col-md-2 {
+		&.onecell {
+			text-align: center;
 		}
-		tbody {
-			tr {
-				td {
-					padding-left:3em;
-					padding-right:3em;
-					margin:3px;
-					&:nth-child(2) {
-						background:white;
-						button {
-							visibility:hidden;
-						}
-						&:hover {
-							button {
-								visibility:visible;
-							}
-							background: $brand-info;
-							color: white;
-						}
-					}
+	}
+	.onecell {
+		position:relative;
+		@media only screen and (max-width : $tablet-screen) {
+			padding: 1em;
+		}
+		&.now {
+			button {
+				position: absolute;
+				visibility: hidden;
+				right:10px;
+				bottom:10px;
+			}
+			.inner {
+
+			} 
+			background: white;
+			&:hover {
+				background: $brand-info;
+				color:white;
+				button {
+					visibility: visible;
 				}
+
 			}
+
 		}
-	}	
+	}
 }
 
 select.genre {
@@ -337,20 +343,55 @@ footer {
 	color: white;
 }
 
+.row-eq-height {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : $retina-screen) {
-    
+    .row-eq-height {
+		display: block;
+	}
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : $phone-screen) {
-
+	.row-eq-height {
+		display: block;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : $tablet-screen) {
+	.row-eq-height {
+		display: block;
+	}
+	.navbar-inverse {
+		background: transparent;
+		border-color: transparent;
+		.navbar-header {
+			background: $brand-primary;
+		}
+		.navbar-collapse {
+		  width: 80%;
+		  margin-left: auto;
+		  background: $brand-primary;
+		}
+		.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+		  background-color: rgba(0, 0, 0, 0.1);
+		}
+		.navbar-collapse.collapsing {
+		  -webkit-transition: width 0.3s;
+		  -moz-transition: width 0.3s;
+		  -ms-transition: width 0.3s;
+		  -o-transition: width 0.3s;
+		  transition: width 0.3s;
 
+		}
+	}
 }
 
 /* Medium Devices, Desktops */
