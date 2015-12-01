@@ -6073,7 +6073,10 @@ select.genre {
 footer {
   height: 10em;
   background: #1babe2;
-  color: white; }
+  color: white;
+  padding-top: 1.5em; }
+  footer a {
+    color: #20409a; }
 
 .row-eq-height {
   display: -webkit-box;

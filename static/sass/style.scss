@@ -341,6 +341,10 @@ footer {
 	height:10em;
 	background: #1babe2;
 	color: white;
+	padding-top: 1.5em;
+	a {
+		color: $brand-info;
+	}
 }
 
 .row-eq-height {
