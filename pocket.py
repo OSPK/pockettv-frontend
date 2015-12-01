@@ -42,7 +42,8 @@ def tv_guide():
 def channel_program_listing():
     return render_template('channel_program_listing.html')
 
-# if __name__ == "__main__":
-#     app.run(host='0.0.0.0', debug=True)
-http_server = WSGIServer(('', 5000), app)
-http_server.serve_forever()
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', debug=True)
+
+# http_server = WSGIServer(('', 80), app)
+# http_server.serve_forever()
