@@ -2,6 +2,7 @@
 Python [Flask](http://flask.pocoo.org/) used for mock backend. Python Uses [Jinja2](http://jinja.pocoo.org/docs/dev/) for templating.
 
 #To run this:
+- You need to have Python, Pip and Virtualenv installed on your machine
 - Clone this repo and cd into it
 - Create python virtualenv: `virtualenv env`
 - Activate virtualenv: `. env/bin/activate`
