@@ -15,5 +15,8 @@ Python [Flask](http://flask.pocoo.org/) used for mock backend. Python Uses [Jinj
 The templating system used here is Jinja, you can look into that if you want.
 However, i will also provide you with plain HTML, CSS and SASS, so no worries if Jinja is not good for you
 
+##SASS
+If you want to compile your own Sass just compile `/static/sass/style.scss`. It imports bootstrap and all custom sass.
+
 ##Look
 Our online testing server: [http://162.243.81.90/](http://162.243.81.90/)
