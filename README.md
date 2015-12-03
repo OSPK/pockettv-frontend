@@ -1,5 +1,5 @@
 #Front end for Pocket TV
-Instructions coming soon
+Python [Flask](http://flask.pocoo.org/) used for mock backend. Python Uses [Jinja2](http://jinja.pocoo.org/docs/dev/) for templating.
 
 #To run this:
 - Clone this repo and cd into it
