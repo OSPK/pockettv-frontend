@@ -5961,7 +5961,7 @@ button.close {
 body {
   background: #e3e5e7;
   color: #333;
-  padding-top: 40px;
+  padding-top: 48px;
   font-size: 14px;
   overflow-x: hidden;
   font-family: "Telenor"; }
@@ -6016,6 +6016,16 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 .mktng-subc .subs {
   padding: 10em; }
 
+.player_container {
+  width: 100%;
+  height: auto; }
+
+.nano .nano-pane {
+  background: #888; }
+
+.nano .nano-slider {
+  background: #111; }
+
 .player-cont {
   background: #21282e;
   color: #efefef;
@@ -6025,13 +6035,15 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
     position: relative; }
   .player-cont .listing {
     padding-left: 1em !important;
-    overflow-y: scroll;
     direction: rtl;
     text-align: left;
-    max-height: 550px; }
+    min-width: 250px;
+    max-width: 300px;
+    max-height: 300px; }
     @media only screen and (max-width: 768px) {
       .player-cont .listing {
-        height: 200px; } }
+        height: 250px;
+        max-width: 100%; } }
     .player-cont .listing ul {
       list-style: none;
       padding-left: 5px;
@@ -6199,18 +6211,16 @@ footer {
   display: -ms-flexbox;
   display: flex; }
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  .row-eq-height {
-    display: block; } }
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  .row-eq-height {
-    display: block; } }
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  body {
+    padding-top: 134px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  body {
+    padding-top: 41px; }
   .row-eq-height {
     display: block; }
   .navbar-inverse {
@@ -6231,5 +6241,12 @@ footer {
       -o-transition: width 0.3s;
       transition: width 0.3s; } }
 
-/* Medium Devices, Desktops */
-/* Large Devices, Wide Screens */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .row-eq-height {
+    display: block; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .row-eq-height {
+    display: block; } }

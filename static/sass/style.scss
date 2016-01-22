@@ -55,7 +55,7 @@ $premium: #E5C70D;
 body {
     background: #e3e5e7;
     color: #333;
-    padding-top: 40px;
+    padding-top: 48px;
 	font-size: 14px;
 	overflow-x: hidden;
 	font-family: "Telenor";
@@ -120,6 +120,18 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 		padding:10em;
 	}
 }
+.player_container {
+	width:100%;
+	height:auto;
+}
+div#panelist {
+  // overflow-y: scroll;
+}
+.nano {
+	// overflow-y: scroll;
+}
+.nano .nano-pane   { background: #888; }
+.nano .nano-slider { background: #111; }
 .player-cont {
 	background: $charcoal;
 	color: #efefef;
@@ -130,12 +142,15 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 	}
 	.listing {
 		padding-left:1em!important;
-		overflow-y: scroll;
+		// overflow-y: scroll;
 		direction: rtl;
 		text-align: left;
-		  max-height: 550px;
+		min-width: 250px;
+		max-width:300px;
+		max-height:300px;
 		@media only screen and (max-width : $tablet-screen) {
-			height:200px;
+			height:250px;
+			max-width:100%;
 		}
 		ul {
 			list-style: none;
@@ -359,22 +374,32 @@ footer {
 		display: flex;
 	}
 
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width : $retina-screen) {
-    .row-eq-height {
-		display: block;
-	}
+
+
+
+
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : $large-screen) {
+		
 }
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width : $phone-screen) {
-	.row-eq-height {
-		display: block;
+/* Medium Devices, Desktops */
+@media only screen and (max-width : $medium-screen) {
+	body {
+		padding-top: 134px;
 	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : $tablet-screen) {
+
+	body {
+		padding-top: 41px;
+	}
+
 	.row-eq-height {
 		display: block;
 	}
@@ -401,14 +426,19 @@ footer {
 
 		}
 	}
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : $medium-screen) {
 
 }
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : $large-screen) {
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : $phone-screen) {
+	.row-eq-height {
+		display: block;
+	}
+}
 
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : $retina-screen) {
+    .row-eq-height {
+		display: block;
+	}
 }
