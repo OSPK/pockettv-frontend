@@ -5964,7 +5964,8 @@ body {
   padding-top: 48px;
   font-size: 14px;
   overflow-x: hidden;
-  font-family: "Telenor"; }
+  font-family: "Telenor";
+  width: 100%; }
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   font-family: "Telenor Bold"; }
@@ -5990,6 +5991,9 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 .home-bricks {
   max-height: 600px;
   overflow: hidden; }
+
+.text-white {
+  color: #efefef; }
 
 .mktng-card {
   position: relative;
@@ -6020,11 +6024,17 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   width: 100%;
   height: auto; }
 
-.nano .nano-pane {
-  background: #888; }
+.nano-content h3 {
+  margin-left: 5px; }
 
-.nano .nano-slider {
-  background: #111; }
+.nano .nano-pane {
+  background: rgba(0, 0, 0, 0.2);
+  left: 2px;
+  right: inherit; }
+
+.nano > .nano-pane > .nano-slider {
+  background: #B1B1B1;
+  background: rgba(177, 177, 177, 0.51); }
 
 .player-cont {
   background: #21282e;
@@ -6059,6 +6069,11 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
           color: #21282e; }
           .player-cont .listing ul li:hover small {
             color: #444; }
+        .player-cont .listing ul li img {
+          width: 30px;
+          height: 30px;
+          float: left;
+          margin-right: 5px; }
 
 .video-slider, .chan-slider {
   margin-bottom: 2em; }
@@ -6105,6 +6120,8 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
       height: 100%;
       color: white;
       overflow: hidden; }
+      .video-slider .slide .cover.on, .chan-slider .slide .cover.on {
+        opacity: 1; }
       .video-slider .slide .cover:hover, .chan-slider .slide .cover:hover {
         opacity: 1;
         transition-duration: 0.2s; }
@@ -6164,7 +6181,9 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   position: relative; }
   @media only screen and (max-width: 768px) {
     .tv_guide_table .onecell {
-      padding: 1em; } }
+      padding: 5px; } }
+  .tv_guide_table .onecell .img-thumbnail {
+    max-width: 60px; }
   .tv_guide_table .onecell.now {
     background: white; }
     .tv_guide_table .onecell.now button {

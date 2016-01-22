@@ -59,6 +59,7 @@ body {
 	font-size: 14px;
 	overflow-x: hidden;
 	font-family: "Telenor";
+	width: 100%;
 }
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
@@ -85,6 +86,9 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 .home-bricks {
 	max-height: 600px;
   overflow: hidden;
+}
+.text-white {
+	color:#efefef;
 }
 .mktng-card {
 	position: relative;
@@ -130,8 +134,20 @@ div#panelist {
 .nano {
 	// overflow-y: scroll;
 }
-.nano .nano-pane   { background: #888; }
-.nano .nano-slider { background: #111; }
+.nano-content {
+	h3 {
+		margin-left: 5px;
+	}
+}
+.nano .nano-pane   { 
+	background: rgba(0,0,0,0.2);
+	left:2px;
+	right: inherit;
+ }
+.nano > .nano-pane > .nano-slider {
+	background: #B1B1B1;
+	background: rgba(177, 177, 177, 0.51);
+ }
 .player-cont {
 	background: $charcoal;
 	color: #efefef;
@@ -169,6 +185,12 @@ div#panelist {
 		    		small {
 		    			color: #444;
 		    		}
+		    	}
+		    	img {
+		    		width: 30px;
+		    		height: 30px;
+					float: left;
+					margin-right: 5px;
 		    	}
 		    }
 		}
@@ -216,6 +238,9 @@ div#panelist {
 		display: block;
 		.cover {
 			opacity: 0;
+			&.on {
+				opacity: 1;
+			}
 			display: block;
 			position: absolute;
 			padding: 0.7em 1em;
@@ -302,7 +327,10 @@ div#panelist {
 	.onecell {
 		position:relative;
 		@media only screen and (max-width : $tablet-screen) {
-			padding: 1em;
+			padding: 5px;
+		}
+		.img-thumbnail {
+			max-width: 60px;
 		}
 		&.now {
 			button {
