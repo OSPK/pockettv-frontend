@@ -33,6 +33,11 @@ def channels():
     return render_template('channels.html')
 
 
+@app.route("/event")
+def event():
+    return render_template('event.html')
+
+
 @app.route("/vod_cat_landing")
 def vod_cat_landing():
     return render_template('vod_cat_landing.html')

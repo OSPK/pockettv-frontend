@@ -131,6 +131,9 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 div#panelist {
   // overflow-y: scroll;
 }
+.event {
+	height:300px;
+}
 .nano {
 	// overflow-y: scroll;
 }
@@ -140,16 +143,18 @@ div#panelist {
 	}
 }
 .nano .nano-pane   { 
-	background: rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.8);
+ }
+.listing.nano .nano-pane {
 	left:2px;
 	right: inherit;
- }
+}
 .nano > .nano-pane > .nano-slider {
 	background: #B1B1B1;
 	background: rgba(177, 177, 177, 0.51);
  }
 .player-cont {
-	background: $charcoal;
+	background: black;
 	color: #efefef;
 	overflow-y: hidden;
 	img {
@@ -161,6 +166,7 @@ div#panelist {
 		// overflow-y: scroll;
 		direction: rtl;
 		text-align: left;
+		background: $charcoal;
 		min-width: 250px;
 		max-width:300px;
 		max-height:300px;
@@ -416,9 +422,7 @@ footer {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : $medium-screen) {
-	body {
-		padding-top: 134px;
-	}
+
 }
 
 /* Small Devices, Tablets */
