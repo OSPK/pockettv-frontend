@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 app.jinja_env.globals.update(random=random)
 
+
 @app.route("/")
 def welcome():
     return render_template('index.html')
@@ -42,9 +43,11 @@ def event():
 def vod_cat_landing():
     return render_template('vod_cat_landing.html')
 
+
 @app.route("/vod_landing")
 def vod_landing():
     return render_template('vod_landing.html')
+
 
 @app.route("/tv_guide")
 def tv_guide():
@@ -59,6 +62,16 @@ def channel_program_listing():
 @app.route("/subscribe_plans")
 def subscribe_plans():
     return render_template('subscribe_plans.html')
+
+
+@app.route("/sign_in")
+def sign_in():
+    return render_template('signin.html')
+
+
+@app.route("/sign_up")
+def sign_up():
+    return render_template('signup.html')
 
 
 if __name__ == "__main__":
