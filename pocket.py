@@ -64,6 +64,11 @@ def subscribe_plans():
     return render_template('subscribe_plans.html')
 
 
+@app.route("/subscription_status")
+def subscription_status():
+    return render_template('subscription_status.html')
+
+
 @app.route("/sign_in")
 def sign_in():
     return render_template('signin.html')
@@ -72,6 +77,11 @@ def sign_in():
 @app.route("/sign_up")
 def sign_up():
     return render_template('signup.html')
+
+
+@app.route("/account_settings")
+def account_settings():
+    return render_template('account_settings.html')
 
 
 @app.route("/transition")
