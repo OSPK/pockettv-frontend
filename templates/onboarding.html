@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<div class="signin">
+	<div class="text-center">
+				<h1>Welcome!</h1>
+				<h3>Choose your favorite movies and tv shows</h3>
+				<p>Welcome onboard! this text must change to tell you what to do!</p>
+	</div>
+
+	<form action="">
+		<div class="row">
+			<div class="col-sm-3">
+				<label>
+					<img class="img-responsive" src="http://lorempixel.com/400/300/?{{random()}}">
+					<input class="checkbox hidden" type="checkbox" value="Movie Name">
+				</label>
+			</div>
+			<div class="col-sm-3">
+				<label>
+					<img class="img-responsive" src="http://lorempixel.com/400/300/?{{random()}}">
+					<input class="checkbox hidden" type="checkbox" value="Movie Name">
+				</label>
+			</div>
+			<div class="col-sm-3">
+				<label>
+					<img class="img-responsive" src="http://lorempixel.com/400/300/?{{random()}}">
+					<input class="checkbox hidden" type="checkbox" value="Movie Name">
+				</label>
+			</div>
+			<div class="col-sm-3">
+				<label>
+					<img class="img-responsive" src="http://lorempixel.com/400/300/?{{random()}}">
+					<input class="checkbox hidden" type="checkbox" value="Movie Name">
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+				<label>
+					<img class="img-responsive" src="http://lorempixel.com/400/300/?{{random()}}">
+					<input class="checkbox hidden" type="checkbox" value="Movie Name">
+				</label>
+			</div>
+			<div class="col-sm-3">
+				<label>
+					<img class="img-responsive" src="http://lorempixel.com/400/300/?{{random()}}">
+					<input class="checkbox hidden" type="checkbox" value="Movie Name">
+				</label>
+			</div>
+			<div class="col-sm-3">
+				<label>
+					<img class="img-responsive" src="http://lorempixel.com/400/300/?{{random()}}">
+					<input class="checkbox hidden" type="checkbox" value="Movie Name">
+				</label>
+			</div>
+			<div class="col-sm-3">
+				<label>
+					<img class="img-responsive" src="http://lorempixel.com/400/300/?{{random()}}">
+					<input class="checkbox hidden" type="checkbox" value="Movie Name">
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+				<label>
+					<img class="img-responsive" src="http://lorempixel.com/400/300/?{{random()}}">
+					<input class="checkbox hidden" type="checkbox" value="Movie Name">
+				</label>
+			</div>
+			<div class="col-sm-3">
+				<label>
+					<img class="img-responsive" src="http://lorempixel.com/400/300/?{{random()}}">
+					<input class="checkbox hidden" type="checkbox" value="Movie Name">
+				</label>
+			</div>
+			<div class="col-sm-3">
+				<label>
+					<img class="img-responsive" src="http://lorempixel.com/400/300/?{{random()}}">
+					<input class="checkbox hidden" type="checkbox" value="Movie Name">
+				</label>
+			</div>
+			<div class="col-sm-3">
+				<label>
+					<img class="img-responsive" src="http://lorempixel.com/400/300/?{{random()}}">
+					<input class="checkbox hidden" type="checkbox" value="Movie Name">
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+				<label>
+					<img class="img-responsive" src="http://lorempixel.com/400/300/?{{random()}}">
+					<input class="checkbox hidden" type="checkbox" value="Movie Name">
+				</label>
+			</div>
+			<div class="col-sm-3">
+				<label>
+					<img class="img-responsive" src="http://lorempixel.com/400/300/?{{random()}}">
+					<input class="checkbox hidden" type="checkbox" value="Movie Name">
+				</label>
+			</div>
+			<div class="col-sm-3">
+				<label>
+					<img class="img-responsive" src="http://lorempixel.com/400/300/?{{random()}}">
+					<input class="checkbox hidden" type="checkbox" value="Movie Name">
+				</label>
+			</div>
+			<div class="col-sm-3">
+				<label>
+					<img class="img-responsive" src="http://lorempixel.com/400/300/?{{random()}}">
+					<input class="checkbox hidden" type="checkbox" value="Movie Name">
+				</label>
+			</div>
+		</div>
+		<button class="btn btn-block btn-lg btn-primary" type="submit">Save</button>
+	</form>
+<br>
+</div>
+{% endblock %}
+
+{% block footer_scripts %}
+<script type="text/javascript">
+	$(".checkbox").change(function() {
+	    if(this.checked) {
+	        $(this).parent().addClass('onb-selected');
+	    }
+	    else {
+	        $(this).parent().removeClass('onb-selected');
+	    }
+	});
+</script>
+{% endblock %}

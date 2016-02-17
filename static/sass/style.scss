@@ -59,9 +59,12 @@ body {
 	font-size: 14px;
 	overflow-x: hidden;
 	font-family: "Telenor";
-	width: 100%;
+	max-width: 100%;
 }
-
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 	font-family: "Telenor Bold";
 }
@@ -73,7 +76,10 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 	background-color: #333;
 	min-height: 30em;
 	background: url('../images/banner.jpg');
-	background-size: cover;
+	background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
 	margin-bottom:0px;
 }
 .starter-template {
@@ -138,16 +144,24 @@ div#panelist {
 	// overflow-y: scroll;
 }
 .nano-content {
-	h3 {
-		margin-left: 5px;
-	}
+	padding-top:50px;
 }
 .nano .nano-pane   { 
 	background: rgba(0,0,0,0.8);
  }
-.listing.nano .nano-pane {
-	left:2px;
-	right: inherit;
+.listing.nano {
+	.nano-pane {
+		left:2px;
+		right: inherit;
+	}
+	.heading {
+		background: #21282E;
+	    padding: 15px 0px 7px 10px;
+	    z-index: 200;
+	    position: relative;
+	    top: 0px;
+	    margin: 0px;
+	}
 }
 .nano > .nano-pane > .nano-slider {
 	background: #B1B1B1;
@@ -243,16 +257,19 @@ div#panelist {
 		position: relative;
 		display: block;
 		.cover {
-			opacity: 0;
+			opacity: 1;
 			&.on {
 				opacity: 1;
+			}
+			.tyle {
+				opacity:0;
 			}
 			display: block;
 			position: absolute;
 			padding: 0.7em 1em;
 			top: 0px;
 			left: 0px;
-			background: rgba(0, 0, 0, 0.74);
+			background: rgba(0, 0, 0, 0.54);
 			box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9), 0px 0px 7px rgba(0, 0, 0, 0.4);
 			z-index: 2;
 			width: 100%;
@@ -260,8 +277,12 @@ div#panelist {
 			color:white;
 			overflow: hidden;
 			&:hover {
+				background: rgba(0, 0, 0, 0.84);
 				opacity: 1;
 				transition-duration:0.2s;
+				.tyle {
+					opacity:1;
+				}
 			}
 			.buttons {
 				position: absolute;
@@ -376,6 +397,12 @@ select.genre {
 	width:14em;
 }
 
+.onb-selected {
+	border: 4px solid $brand-warning;
+	box-shadow: 0px 0px 2px black;
+	box-sizing:border-box;
+}
+
 .navbar-brand {
 	width:200px;
 
@@ -432,7 +459,9 @@ footer {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : $medium-screen) {
-
+	.jumbotron {
+		min-height: 25em;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -441,7 +470,9 @@ footer {
 	body {
 		padding-top: 41px;
 	}
-
+	.jumbotron {
+		min-height: 20em;
+	}
 	.row-eq-height {
 		display: block;
 	}
@@ -476,11 +507,17 @@ footer {
 	.row-eq-height {
 		display: block;
 	}
+	.jumbotron {
+		min-height: 15em;
+	}
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : $retina-screen) {
     .row-eq-height {
 		display: block;
+	}
+	.jumbotron {
+		min-height: 10em;
 	}
 }

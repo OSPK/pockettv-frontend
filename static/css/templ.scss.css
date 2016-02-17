@@ -116,3 +116,6 @@
       background: #1BABE2; }
     .plan.recommended .btn {
       margin-bottom: 10px; }
+
+.float-left {
+  float: left; }
