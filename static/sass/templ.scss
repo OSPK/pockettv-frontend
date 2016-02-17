@@ -196,3 +196,17 @@
 .float-left {
 	float:left;
 }
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
+.block {
+	display: block;
+}

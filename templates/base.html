@@ -22,13 +22,17 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body onload="loaded()">
+	<body class="site" onload="loaded()">
 		{% include 'navbar.html' %}
-		{% block header %}
-		{% endblock %}
-		<div class="container-fluid">
-			{% block body %}
-			{% endblock %}
+
+		<div class="block">
+			{% block header %}{% endblock %}
+		</div>
+
+		<div class="site-content">
+			<div class="container-fluid block">
+				{% block body %}{% endblock %}
+			</div>
 		</div>
 
 		{% block footer %}

@@ -74,6 +74,11 @@ def sign_up():
     return render_template('signup.html')
 
 
+@app.route("/transition")
+def transition():
+    return render_template('transition.html')
+
+
 @app.route("/onboarding")
 def onboarding():
     return render_template('onboarding.html')
