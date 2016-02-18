@@ -5950,6 +5950,19 @@ button.close {
 .block {
   display: block; }
 
+@media (max-width: 768px) {
+  .btn-responsive {
+    padding: 2px 4px;
+    font-size: 80%;
+    line-height: 1;
+    border-radius: 3px; } }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .btn-responsive {
+    padding: 4px 9px;
+    font-size: 90%;
+    line-height: 1.2; } }
+
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
@@ -6004,9 +6017,6 @@ h4 {
   font-size: 1.4em; }
 
 p {
-  font-size: 1em; }
-
-li {
   font-size: 1em; }
 
 .thin {
