@@ -5976,7 +5976,7 @@ body {
   background: #e3e5e7;
   color: #333;
   padding-top: 48px;
-  font-size: 14px;
+  font-size: 12px;
   overflow-x: hidden;
   font-family: "Telenor";
   max-width: 100%; }
@@ -5987,6 +5987,27 @@ body {
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   font-family: "Telenor Bold"; }
+
+h1 {
+  font-size: 2.4em; }
+
+h2 {
+  font-size: 2.0em; }
+
+h3 {
+  font-size: 1.8em; }
+
+h4 {
+  font-size: 1.6em; }
+
+h4 {
+  font-size: 1.4em; }
+
+p {
+  font-size: 1em; }
+
+li {
+  font-size: 1em; }
 
 .thin {
   font-family: "Telenor Light"; }
@@ -6287,10 +6308,16 @@ footer {
   display: flex; }
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 12px; } }
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .jumbotron {
-    min-height: 25em; } }
+    min-height: 25em; }
+  body {
+    font-size: 12px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -6316,18 +6343,24 @@ footer {
       -moz-transition: width 0.3s;
       -ms-transition: width 0.3s;
       -o-transition: width 0.3s;
-      transition: width 0.3s; } }
+      transition: width 0.3s; }
+  body {
+    font-size: 10px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .row-eq-height {
     display: block; }
   .jumbotron {
-    min-height: 15em; } }
+    min-height: 15em; }
+  body {
+    font-size: 9px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   .row-eq-height {
     display: block; }
   .jumbotron {
-    min-height: 10em; } }
+    min-height: 10em; }
+  body {
+    font-size: 8px; } }

@@ -56,7 +56,7 @@ body {
     background: #e3e5e7;
     color: #333;
     padding-top: 48px;
-	font-size: 14px;
+	font-size: 12px;
 	overflow-x: hidden;
 	font-family: "Telenor";
 	max-width: 100%;
@@ -67,6 +67,31 @@ body {
 }
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 	font-family: "Telenor Bold";
+}
+h1 {
+    font-size: 2.4em;
+}
+
+h2 {
+    font-size: 2.0em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+h4 {
+	font-size: 1.6em;
+}
+h4 {
+	font-size: 1.4em;
+}
+
+p {
+    font-size: 1em;
+}
+
+li {
+    font-size: 1em;
 }
 .thin {
 	font-family: "Telenor Light";
@@ -460,13 +485,18 @@ footer {
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : $large-screen) {
-		
+	body {
+		font-size:12px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : $medium-screen) {
 	.jumbotron {
 		min-height: 25em;
+	}
+	body {
+		font-size:12px;
 	}
 }
 
@@ -505,6 +535,9 @@ footer {
 
 		}
 	}
+	body {
+		font-size:10px;
+	}
 
 }
 
@@ -516,6 +549,9 @@ footer {
 	.jumbotron {
 		min-height: 15em;
 	}
+	body {
+		font-size:9px;
+	}
 }
 
 /* Custom, iPhone Retina */ 
@@ -525,5 +561,8 @@ footer {
 	}
 	.jumbotron {
 		min-height: 10em;
+	}
+	body {
+		font-size:8px;
 	}
 }
