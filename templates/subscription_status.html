@@ -1,22 +1,107 @@
-{% extends "base.html" %}
-
-{% block header %}
-
-{% endblock %}
+{% extends "base.html" %} 
+{% block header %} {% endblock %}
 
 {% block body %}
-<div class="subscription-status">
-		<div class="text-center">
-			<h1>Open this in the app?</h1>
-			<p>Some text for transition</p>
-			<div class="row no-pad">
-				<div class="col-sm-6">
-					<a href="#" class="btn btn-block btn-primary">Continue on Web</a>
-				</div>
-				<div class="col-sm-6">
-					<a href="#" class="btn btn-block btn-success">Open in App</a>
-				</div>
-			</div> <!-- row-->
-		</div>
+<div class="pricing-tables">
+    <div class="text-center">
+        <h1 id="detached-wide">
+				Change your subscription plan
+	        </h1>
+        <h4>You can change your subscription plan here</h4>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-md-4 current-plan">
+            <div class="plan">
+                <div class="head">
+                    <h2>Starter</h2>
+                </div>
+                <ul class="item-list">
+                    <li><strong>20GB</strong> Data</li>
+                    <li>
+                        <strong>15</strong> Movies</li>
+                    <li><strong>5</strong> Hours Live TV </li>
+                    <li><strong>Endless</strong> Clips</li>
+                </ul>
+                <div class="price">
+                    <h3><span class="symbol">Rs.</span>19</h3>
+                    <h4>per month</h4>
+                </div>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Subscribe Now</button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Subscription</h4>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="text-success">You have been subscribed!</h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4 ">
+            <div class="plan">
+                <div class="head">
+                    <h2>Value</h2>
+                </div>
+                <ul class="item-list">
+                    <li><strong>50GB</strong> Data</li>
+                    <li><strong>25</strong> Movies</li>
+                    <li><strong>15</strong> Hours Live Streaming</li>
+                    <li></li>
+                    <li><strong>Endless</strong> Clips</li>
+                </ul>
+                <div class="price">
+                    <h3><span class="symbol">Rs.</span>29</h3>
+                    <h4>per month</h4>
+                </div>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2">Subscribe Now</button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Subscription</h4>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="text-danger">Insufficient Balance</h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Add Credit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4  ">
+            <div class="plan">
+                <div class="head">
+                    <h2>Pro</h2>
+                </div>
+                <ul class="item-list">
+                    <li><strong>100GB </strong>Data</li>
+                    <li><strong>50 </strong>Movies</li>
+                    <li><strong>25</strong> Hours Live Tv</li>
+                    <li><strong>Endless</strong> Clips</li>
+                </ul>
+                <div class="price">
+                    <h3><span class="symbol">Rs.</span>49</h3>
+                    <h4>per month</h4>
+                </div>
+                <button type="button" class="btn btn-success">Subscribe Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- row-->
 </div>
 {% endblock %}

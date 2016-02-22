@@ -150,7 +150,25 @@ p {
 .mktng-subc {
 	.subs {
 		padding:10em;
+		h1 {
+			// word-wrap: break-word;
+		}
 	}
+}
+.current-plan {
+    background-color: lightgrey;
+    opacity: 0.6;
+    pointer-events: none;
+    &:before {
+    	    content: "Current Plan";
+		    text-align: center;
+		    width: 100%;
+		    display: block;
+		    margin-bottom: -15px;
+		    margin-top: 5px;
+		    color: #F00;
+		    font-weight: bold;
+    }
 }
 .player_container {
 	width:100%;
