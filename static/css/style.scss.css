@@ -6385,9 +6385,9 @@ footer {
     background: transparent;
     border-color: transparent; }
     .navbar-inverse .navbar-header {
-      background: #159fd1; }
+      background: #159fd1;
+      min-height: 50px; }
     .navbar-inverse .navbar-collapse {
-      width: 80%;
       margin-left: auto;
       background: #159fd1; }
     .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {

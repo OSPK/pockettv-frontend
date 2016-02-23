@@ -576,9 +576,9 @@ footer {
 		border-color: transparent;
 		.navbar-header {
 			background: $brand-primary;
+			min-height: 50px;
 		}
 		.navbar-collapse {
-		  width: 80%;
 		  margin-left: auto;
 		  background: $brand-primary;
 		}
