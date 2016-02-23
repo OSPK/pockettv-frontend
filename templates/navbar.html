@@ -1,42 +1,40 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ url_for('welcome') }}">
-            <span class="logo"><img class="img-responsive" src="/static/images/logo-white.png" alt=""></span>
-            <span class="text">Pocket TV</span>
-            </a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="{{ url_for('home') }}">Home</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Templates <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="{{ url_for('sink') }}">Sink</a></li>
-                    <li><a href="{{ url_for('event') }}">Event</a></li>
-                    <li><a href="{{ url_for('channels') }}">Channels</a></li>
-                    <li><a href="{{ url_for('channel_landing') }}">Channel Landing</a></li>
-                    <li><a href="{{ url_for('vod_cat_landing') }}">VoD Cat Landing</a></li>
-                    <li><a href="{{ url_for('vod_landing') }}">VoD Landing</a></li>
-                    <li><a href="{{ url_for('tv_guide') }}">Tv Guide</a></li>
-                    <li><a href="{{ url_for('channel_program_listing') }}">Channel program listing</a></li>
-                    <li><a href="{{ url_for('subscribe_plans') }}">Subscribe</a></li>
-                    <li><a href="{{ url_for('subscription_status') }}">Subscription Status</a></li>
-                    <li><a href="{{ url_for('onboarding') }}">Onboarding</a></li>
-                    <li><a href="{{ url_for('transition') }}">Transition</a></li>
-                    <li><a href="{{ url_for('sign_up') }}">Sign Up</a></li>
-                    <li><a href="{{ url_for('sign_in') }}">Sign In</a></li>
-                    <li><a href="{{ url_for('account_settings') }}">Account Settings</a></li>
-                  </ul>
-                </li>
-            </ul>
-        </div>
-        <!--/.nav-collapse -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ url_for('welcome') }}">
+        <span class="logo"><img class="img-responsive" src="/static/images/logo-white.png" alt=""></span>
+        <span class="text">Pocket TV</span>
+        </a>
     </div>
+    <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Templates <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{ url_for('sink') }}">Sink</a></li>
+                <li><a href="{{ url_for('event') }}">Event</a></li>
+                <li><a href="{{ url_for('channels') }}">Channels</a></li>
+                <li><a href="{{ url_for('channel_landing') }}">Channel Landing</a></li>
+                <li><a href="{{ url_for('vod_cat_landing') }}">VoD Cat Landing</a></li>
+                <li><a href="{{ url_for('vod_landing') }}">VoD Landing</a></li>
+                <li><a href="{{ url_for('tv_guide') }}">Tv Guide</a></li>
+                <li><a href="{{ url_for('channel_program_listing') }}">Channel program listing</a></li>
+                <li><a href="{{ url_for('subscribe_plans') }}">Subscribe</a></li>
+                <li><a href="{{ url_for('subscription_status') }}">Subscription Status</a></li>
+                <li><a href="{{ url_for('onboarding') }}">Onboarding</a></li>
+                <li><a href="{{ url_for('transition') }}">Transition</a></li>
+                <li><a href="{{ url_for('sign_up') }}">Sign Up</a></li>
+                <li><a href="{{ url_for('sign_in') }}">Sign In</a></li>
+                <li><a href="{{ url_for('account_settings') }}">Account Settings</a></li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+    <!--/.nav-collapse -->
 </nav>
