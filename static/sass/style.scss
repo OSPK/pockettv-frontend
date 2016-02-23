@@ -571,29 +571,6 @@ footer {
 	.row-eq-height {
 		display: block;
 	}
-	.navbar-inverse {
-		background: transparent;
-		border-color: transparent;
-		.navbar-header {
-			background: $brand-primary;
-			min-height: 50px;
-		}
-		.navbar-collapse {
-		  margin-left: auto;
-		  background: $brand-primary;
-		}
-		.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
-		  background-color: rgba(0, 0, 0, 0.1);
-		}
-		.navbar-collapse.collapsing {
-		  -webkit-transition: width 0.3s;
-		  -moz-transition: width 0.3s;
-		  -ms-transition: width 0.3s;
-		  -o-transition: width 0.3s;
-		  transition: width 0.3s;
-
-		}
-	}
 	body {
 		font-size:10px;
 	}
