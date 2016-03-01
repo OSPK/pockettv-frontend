@@ -6329,8 +6329,6 @@ p {
   @media only screen and (max-width: 768px) {
     .tv_guide_table .onecell {
       padding: 5px; } }
-  .tv_guide_table .onecell .img-thumbnail {
-    max-width: 60px; }
   .tv_guide_table .onecell.now {
     background: white; }
     .tv_guide_table .onecell.now button {
