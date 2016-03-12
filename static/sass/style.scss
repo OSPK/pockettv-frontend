@@ -338,6 +338,16 @@ div#panelist {
 		}
 	}
 }
+.slide-head {
+	display: block;
+    position: relative;
+    width: 100%;
+    .view-all {
+		position: absolute;
+	    right: 10px;
+	    bottom: 0px;
+	}
+}
 .owl-prev {
   position: absolute;
   left: -30px;
