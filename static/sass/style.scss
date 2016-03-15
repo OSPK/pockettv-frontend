@@ -566,7 +566,9 @@ footer {
 
 
 
-
+.video-slider a.btn.btn-info.hidden-xs.hidden-sm {
+    display: none;
+}
 
 
 
@@ -586,6 +588,9 @@ footer {
 	body {
 		font-size:12px;
 	}
+	#search input[type="search"] {
+		font-size:4em;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -603,6 +608,9 @@ footer {
 	body {
 		font-size:10px;
 	}
+	#search input[type="search"] {
+		font-size:3em;
+	}
 
 }
 
@@ -617,6 +625,9 @@ footer {
 	body {
 		font-size:9px;
 	}
+	#search input[type="search"] {
+		font-size:2em;
+	}
 }
 
 /* Custom, iPhone Retina */ 
@@ -629,5 +640,8 @@ footer {
 	}
 	body {
 		font-size:8px;
+	}
+	#search input[type="search"] {
+		font-size:1em;
 	}
 }
