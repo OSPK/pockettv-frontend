@@ -94,6 +94,12 @@ def onboarding():
     return render_template('onboarding.html')
 
 
+@app.route("/nescafe")
+def nescafe():
+    return render_template('nescafe_basement.html')
+
+
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
 

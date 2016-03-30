@@ -463,6 +463,21 @@ select.genre {
 	}
 }
 
+.nescafe {
+	h3, h4 {
+	color: #efefef;
+	}
+	.text {
+		margin-top:20px;
+		margin-bottom: 15px;
+		
+		p {
+			font-size:2em;
+			color: #dfdfdf;
+		}
+	}
+}
+
 .movie-card {
     max-height: 300px;
     overflow: hidden;
