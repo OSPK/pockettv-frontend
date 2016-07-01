@@ -23,87 +23,91 @@
 		<![endif]-->
 	</head>
 	<body class="site" onload="loaded()">
-		{% include 'navbar.html' %}
+		<div id="wrapper">
+			<a href="#menu-toggle" class="btn btn-lg btn-default" id="menu-toggle"><i class="glyphicon glyphicon-menu-hamburger"></i> Menu</a>
+			{% include 'navbar.html' %}
 
-		<div id="search">
-		    <button type="button" class="close">×</button>
-		    <form>
-		        <input type="search" value="" placeholder="type keyword(s) here" />
-		        <button type="submit" class="btn btn-lg btn-primary">Search</button>
-		    </form>
-		</div>
-
-		<div class="block">
-			{% block header %}{% endblock %}
-		</div>
-
-		<div class="site-content">
-			<div class="container-fluid block">
-				{% block body %}{% endblock %}
+			<div id="search">
+			    <button type="button" class="close">×</button>
+			    <form>
+			        <input type="search" value="" placeholder="type keyword(s) here" />
+			        <button type="submit" class="btn btn-lg btn-primary">Search</button>
+			    </form>
 			</div>
-		</div>
 
-		{% block footer %}
-		<footer>
-			<div class="container">
-			<div class="text-center">
-				<img style="width:100px;" src="/static/images/logo-white.png" alt=""><br>
-				<h4>Pocket Tv</h4><hr>
+			<div class="block">
+				{% block header %}{% endblock %}
 			</div>
-			    <div class="row text-center">
-			            <div class="col-sm-3 col-xs-6">
-			                <ul class="list-unstyled">
-			                    <li>GitHub<li>
-			                    <li><a href="#">About us</a></li>
-			                    <li><a href="#">Blog</a></li>
-			                    <li><a href="#">Contact & support</a></li>
-			                    <li><a href="#">Site status</a></li>
-			                </ul>
-			            </div>
-			            <div class="col-sm-3 col-xs-6">
-			                <ul class="list-unstyled">
-			                    <li>Applications<li>
-			                    <li><a href="#">Android App</a></li>
-			                    <li><a href="#">IOS App</a></li>
-			                    <li><a href="#">Windows App</a></li>
-			                    <li><a href="#">Other Apps</a></li>
-			                </ul>
-			            </div>
-			            <div class="col-sm-3 col-xs-6">
-			                <ul class="list-unstyled">
-			                    <li>Services<li>
-			                    <li><a href="#">Web analytics</a></li>
-			                    <li><a href="#">Presentations</a></li>
-			                    <li><a href="#">Telenor Home</a></li>
-			                    <li><a href="#">Careers</a></li>
-			                </ul>
-			            </div>
-			            <div class="col-sm-3 col-xs-6">
-			                <ul class="list-unstyled">
-			                    <li>Documentation<li>
-			                    <li><a href="#">Product Help</a></li>
-			                    <li><a href="#">Developer API</a></li>
-			                    <li><a href="#">Product Markdown</a></li>
-			                    <li><a href="#">Product Pages</a></li>
-			                </ul>
-			            </div>
-			    </div>
-			    <hr>
-			    <div class="row">
-			            <div class="col-xs-8">
-			                <ul class="list-unstyled list-inline pull-left">
-			                    <li><a href="#">Terms of Service</a></li>
-			                    <li><a href="#">Contact Us</a></li>
-			                    <li><a href="#">Privacy</a></li>
-			                </ul>
-			            </div>
-			            <div class="col-xs-4">
-			                <p class="pull-right">© 2015 Telenor. All rights reserved</p>
-			            </div>
-			        </div>
+
+			<div class="site-content">
+				<div class="container-fluid block">
+					{% block body %}{% endblock %}
+				</div>
 			</div>
-		</footer>
-		{% endblock %}
+
+			{% block footer %}
+			<footer>
+				<div class="container">
+				<div class="text-center">
+					<img style="width:100px;" src="/static/images/logo-white.png" alt=""><br>
+					<h4>Pocket Tv</h4><hr>
+				</div>
+				    <div class="row text-center">
+				            <div class="col-sm-3 col-xs-6">
+				                <ul class="list-unstyled">
+				                    <li>GitHub<li>
+				                    <li><a href="#">About us</a></li>
+				                    <li><a href="#">Blog</a></li>
+				                    <li><a href="#">Contact & support</a></li>
+				                    <li><a href="#">Site status</a></li>
+				                </ul>
+				            </div>
+				            <div class="col-sm-3 col-xs-6">
+				                <ul class="list-unstyled">
+				                    <li>Applications<li>
+				                    <li><a href="#">Android App</a></li>
+				                    <li><a href="#">IOS App</a></li>
+				                    <li><a href="#">Windows App</a></li>
+				                    <li><a href="#">Other Apps</a></li>
+				                </ul>
+				            </div>
+				            <div class="col-sm-3 col-xs-6">
+				                <ul class="list-unstyled">
+				                    <li>Services<li>
+				                    <li><a href="#">Web analytics</a></li>
+				                    <li><a href="#">Presentations</a></li>
+				                    <li><a href="#">Telenor Home</a></li>
+				                    <li><a href="#">Careers</a></li>
+				                </ul>
+				            </div>
+				            <div class="col-sm-3 col-xs-6">
+				                <ul class="list-unstyled">
+				                    <li>Documentation<li>
+				                    <li><a href="#">Product Help</a></li>
+				                    <li><a href="#">Developer API</a></li>
+				                    <li><a href="#">Product Markdown</a></li>
+				                    <li><a href="#">Product Pages</a></li>
+				                </ul>
+				            </div>
+				    </div>
+				    <hr>
+				    <div class="row">
+				            <div class="col-xs-8">
+				                <ul class="list-unstyled list-inline pull-left">
+				                    <li><a href="#">Terms of Service</a></li>
+				                    <li><a href="#">Contact Us</a></li>
+				                    <li><a href="#">Privacy</a></li>
+				                </ul>
+				            </div>
+				            <div class="col-xs-4">
+				                <p class="pull-right">© 2015 Telenor. All rights reserved</p>
+				            </div>
+				        </div>
+				</div>
+			</footer>
+			{% endblock %}
+		</div>
+    	<!-- /#wrapper -->
 
 		<!-- jQuery -->
 		<script src="/static/js/jquery.js"></script>
