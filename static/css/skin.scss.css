@@ -207,14 +207,14 @@
   .jw-skin-pocket .jw-background-color {
     background: rgba(51, 51, 51, 0.7); }
   .jw-skin-pocket .jw-button-color {
-    color: #464646;
+    color: rgba(255, 255, 255, 0.7);
     /*
             This will adjust the color of all buttons when they are hovered on.
         */ }
     .jw-skin-pocket .jw-button-color:hover {
-      color: #000000; }
+      color: #fff; }
   .jw-skin-pocket .jw-text {
-    color: #464646; }
+    color: #ddd; }
   .jw-skin-pocket .jw-toggle {
     color: #000; }
     .jw-skin-pocket .jw-toggle.jw-off {
@@ -233,7 +233,7 @@
             Show the underlying menu.
         */ }
   .jw-skin-pocket .jw-menu {
-    background: #333;
+    background: rgba(0, 0, 0, 0.6);
     border: 0;
     padding: .5em; }
     .jw-skin-pocket .jw-menu .jw-option {
@@ -264,7 +264,7 @@
             In JW 7 the dock elements are on the upper right corner of the player.
         */ }
     .jw-skin-pocket .jw-controls .jw-display-icon-container {
-      border-radius: 0;
+      border-radius: 0.2em;
       /*
                 Used to style icons that appear in the display container. The
                 icon that is rendered depends on the state the player is in.
@@ -272,7 +272,7 @@
       .jw-skin-pocket .jw-controls .jw-display-icon-container .jw-icon-display {
         color: rgba(238, 238, 238, 0.8); }
       .jw-skin-pocket .jw-controls .jw-display-icon-container:hover {
-        background: #333; }
+        background: rgba(0, 0, 0, 0.4); }
         .jw-skin-pocket .jw-controls .jw-display-icon-container:hover .jw-icon-display {
           color: #fff; }
     .jw-skin-pocket .jw-controls .jw-controlbar {
@@ -285,8 +285,8 @@
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
       /* IE6-9 */
-      padding-bottom: 1.5em;
-      padding-top: 0em;
+      padding-bottom: 0.7em;
+      padding-top: 1.2em;
       /*
                 Used to vertically align the timeslider and all icons in the
                 center of the controlbar.
@@ -356,13 +356,19 @@
               .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-left-group .jw-icon-playlist .jw-playlist-container .jw-playlist .jw-option:hover, .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-left-group .jw-icon-playlist .jw-playlist-container .jw-playlist .jw-option.jw-active-option {
                 background-color: #ececec;
                 color: #000; }
-        .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-center-group .jw-slider-time .jw-time-tip {
-          background: #333;
-          border: 0;
-          padding: .5em;
-          bottom: 1em; }
-          .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-center-group .jw-slider-time .jw-time-tip .jw-text {
-            color: #bbb; }
+        .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-center-group .jw-slider-time {
+          position: absolute;
+          top: 0px;
+          width: 100%;
+          padding: 0em;
+          height: 0.3em; }
+          .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-center-group .jw-slider-time .jw-time-tip {
+            background: rgba(0, 0, 0, 0.6);
+            border: 0;
+            padding: .5em;
+            bottom: 1em; }
+            .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-center-group .jw-slider-time .jw-time-tip .jw-text {
+              color: #bbb; }
         .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-right-group {
           /*
                         Wrapper for the total duration of the file being played.
@@ -401,13 +407,15 @@
           /*
                         This class is used to display the Chromecast icon.
                     */ }
+          .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-right-group .jw-text-duration {
+            color: #fff; }
           .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-right-group .jw-icon-volume {
             /*
                             When the player is muted the .jw-off class gets
                             added to toggle the volume off icon.
                         */ }
             .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-right-group .jw-icon-volume.jw-volume-tip {
-              background: #333;
+              background: rgba(0, 0, 0, 0.6);
               border: 0;
               padding: .5em; }
           .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-right-group .jw-icon-fullscreen {
@@ -431,8 +439,6 @@
         .jw-skin-pocket .jw-controls .jw-controls-right .jw-dock-button .jw-text {
           color: #bbb; }
   .jw-skin-pocket .jw-slider-container {
-    position: absolute;
-    top: 0px;
     /*
             Sets the style for the base layer of the slider.
         */
@@ -449,13 +455,17 @@
             indicate where playback is currently.
         */ }
     .jw-skin-pocket .jw-slider-container .jw-rail {
-      background: #b8b6b7; }
+      background: #333; }
     .jw-skin-pocket .jw-slider-container .jw-buffer {
-      background: #9c9a9d; }
+      background: #ccc; }
     .jw-skin-pocket .jw-slider-container .jw-progress {
-      background: #000; }
+      background: #b52100; }
     .jw-skin-pocket .jw-slider-container .jw-knob {
-      color: #464646; }
+      width: .2em;
+      height: .6em;
+      background-color: #fff;
+      border-radius: 0em;
+      margin-top: -3px; }
   .jw-skin-pocket .jw-slider-horizontal {
     background: transparent; }
     .jw-skin-pocket .jw-slider-horizontal .jw-slider-container {
@@ -472,13 +482,11 @@
       .jw-skin-pocket .jw-slider-horizontal .jw-slider-container .jw-rail {
         box-shadow: none; }
       .jw-skin-pocket .jw-slider-horizontal .jw-slider-container .jw-knob {
-        top: -0.4em;
-        margin: 0;
-        margin-left: -0.5em;
-        background-color: #000;
-        border-radius: 0;
-        width: 1px;
-        height: 1em; }
+        width: .2em;
+        height: .6em;
+        background-color: #fff;
+        border-radius: 0em;
+        margin-top: -3px; }
       .jw-skin-pocket .jw-slider-horizontal .jw-slider-container .jw-cue {
         top: -0.1em;
         width: .1em;

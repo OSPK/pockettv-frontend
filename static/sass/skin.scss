@@ -99,9 +99,18 @@
 }
 
 @mixin jw-tip() {
-    background: #333;
+    background: rgba(0,0,0,0.6);
     border: 0;
     padding: .5em;
+}
+
+@mixin knob() {
+    width: .2em;
+    height: .6em;
+    background-color: #fff;
+    //box-shadow: 0 0 0 1px #000;
+    border-radius: 0em;
+    margin-top:-3px;
 }
 
 .jw-skin-pocket {
@@ -133,13 +142,13 @@
         add this class all icons.
     */
     .jw-button-color {
-        color: #464646;
+        color: rgba(255,255,255,0.7);
 
         /*
             This will adjust the color of all buttons when they are hovered on.
         */
         &:hover {
-            color: #000000; 
+            color: #fff; 
         }
 
     }
@@ -149,7 +158,7 @@
         controlbar elapsed, menu options).
     */
     .jw-text {
-        color: #464646;
+        color: #ddd;
     }
 
     /**************************************************************************/
@@ -337,7 +346,7 @@
             Used to style the container in which the display icons are.
         */
         .jw-display-icon-container {
-            border-radius: 0;
+            border-radius: 0.2em;
 
             /*
                 Used to style icons that appear in the display container. The
@@ -348,7 +357,7 @@
             }
 
             &:hover {
-                background: #333;
+                background: rgba(0,0,0,0.4);
 
                 .jw-icon-display {
                     color: #fff;
@@ -368,8 +377,8 @@
             background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 
-            padding-bottom:1.5em;
-            padding-top:0em;
+            padding-bottom:0.7em;
+            padding-top:1.2em;
 
             /*
                 Used to vertically align the timeslider and all icons in the
@@ -485,7 +494,11 @@
                 &.jw-controlbar-center-group {
 
                     .jw-slider-time {
-
+                        position:absolute;
+                        top:0px;
+                        width:100%;
+                        padding:0em;
+                        height:0.3em;
                         .jw-time-tip {
                             @include jw-tip();
 
@@ -512,6 +525,7 @@
                         differently.
                     */
                     .jw-text-duration {
+                        color: #fff;
                     }
 
                     /*
@@ -635,7 +649,7 @@
             Sets the style for the base layer of the slider.
         */
         .jw-rail {
-            background: #b8b6b7;
+            background: #333;
         }
 
         /*
@@ -643,7 +657,7 @@
             which is layered on top of .jw-rail.
         */
         .jw-buffer {
-            background: #9c9a9d;
+            background: #ccc;
         }
 
         /*
@@ -651,7 +665,7 @@
             on top of .jw-buffer.
         */
         .jw-progress {
-            background: #000;
+            background: #b52100;
         }
 
         /*
@@ -659,7 +673,7 @@
             indicate where playback is currently.
         */
         .jw-knob {
-            color: #464646;
+             @include knob();
         }
 
     }
@@ -682,13 +696,7 @@
             }
 
             .jw-knob {
-                top: -0.4em;
-                margin: 0;
-                margin-left: -0.5em;
-                background-color: #000;
-                border-radius: 0;
-                width: 1px;
-                height: 1em;
+                @include knob();
             }
 
             /*
