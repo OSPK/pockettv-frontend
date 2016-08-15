@@ -1,0 +1,490 @@
+/******************************************************************************/
+/* Player - States                                                            */
+/******************************************************************************/
+/*
+    The state of the player is reflected in the DOM by a class on the main div.
+    It will always contain one of the following:
+
+        jw-state-playing
+        jw-state-paused
+        jw-state-buffering
+        jw-state-idle - before pressing play
+        jw-state-complete - after playlist completes
+*/
+/******************************************************************************/
+/* Player - Flags                                                             */
+/******************************************************************************/
+/*
+    Sometimes the player needs to signify certain modes of the playback.
+    These flags will be present on the main div and can be:
+
+        jw-flag-fullscreen - when the player is in fullscreen
+        jw-flag-live - when the player is playing back live video
+        jw-flag-user-inactive - added after a few minutes of inactivity
+        jw-flag-controlbar-only - player is less than 30 pixels tall
+        jw-flag-media-audio - content being played is an audio file
+        jw-flag-dragging - mouse down with cursor over control bar
+        jw-flag-aspect-mode - enable a padding to create an aspect ratio
+*/
+/******************************************************************************/
+/* Player - Poster Images                                                     */
+/******************************************************************************/
+/*
+    These define how the poster image will be stretched to fill the space given.
+    Internally this state is used to stretch the player using JS.
+
+        jw-stretch-none
+        jw-stretch-uniform
+        jw-stretch-fill
+        jw-stretch-exactfit
+*/
+/******************************************************************************/
+/* Player - Icons                                                             */
+/******************************************************************************/
+/*
+    All JW Player icons are rendered using the font jw-six-icons.eot.
+    Each icon has a character code that is mapped to a corresponding interface element.
+
+        Icon            Character Code
+        Play            \e60e
+        Replay          \e610
+        Pause           \e60d
+        Previous        \e60f
+        Next            \e60c
+        Cuepoint        \e606
+        Buffering       \e601
+        HD Off          \e60a
+        HD On           \e609
+        CC Off          \e605
+        CC On           \e604
+        Fullscreen      \e608
+        Menu Bullet     \e606
+        Audio Tracks    \e600
+        Volume On       \e612
+        Volume Off      \e611
+        More            \e614
+        Close           \e615
+
+    The easiest way to modify the default icons is to create a new font based
+    on these character mappings. See Creating Web Font for more information.
+*/
+.jw-icon {
+  font-family: 'jw-icons';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  background-color: transparent;
+  font-variant: normal;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -moz-osx-font-smoothing: grayscale; }
+
+.jw-skin-pocket {
+  /**************************************************************************/
+  /* Colors                                                                 */
+  /**************************************************************************/
+  /*
+        This is a class that will add a set of style to all interface elements
+        without having to change it for each individual class. We advise only
+        using jw-background-color for color and not other CSS properties.
+        The player will add this class to the following elements:
+
+            jw-dock-button
+            jw-icon-display-container
+            jw-controlbar
+            jw-menu
+            jw-slider-volume
+     */
+  /*
+        This is a class that player will add to specific elements when color is
+        overridden from within the player configuration setup. You can also use
+        this to easily change all button colors in your skin. The player will
+        add this class all icons.
+    */
+  /*
+        This class is added to all text elements (time tooltip, controlbar duration,
+        controlbar elapsed, menu options).
+    */
+  /**************************************************************************/
+  /* Misc                                                                   */
+  /**************************************************************************/
+  /*
+        Added to toggable icons if de-/activated.
+        Used in elements like:
+
+            .jw-icon-hd (only if there are 2 options: off and on)
+            .jw-icon-cc (only if there are 2 options: off and on)
+            .jw-icon-volume
+
+    */
+  /**************************************************************************/
+  /* Title and Preview Image                                                */
+  /**************************************************************************/
+  /*
+        The title and description configuration options are displayed in their
+        own classes overlaid on the player.
+
+        These define how the poster image will be stretched to fill the space given.
+        Internally this state is used to stretch the player using JS.
+
+            jw-stretch-none
+            jw-stretch-uniform
+            jw-stretch-fill
+            jw-stretch-exactfit
+    */
+  /*
+        This class styles the preview image from the image configuration option
+        in the player setup per-playlist item.
+    */
+  /*
+        This is the wrapper class the text overlays.
+    */
+  /**************************************************************************/
+  /* Menus and Overlays                                                     */
+  /**************************************************************************/
+  /*
+        JW Player will automatically populate overlay divs on mouseover/touch of
+        certain interface elements. These overlays are for the timeslider tooltip,
+        closed-captions, video qualities, multiple audio-tracks, and the volume
+        slider. There is also a new special menu for the visual playlist.
+
+        All overlays are wrapped in this class. It is not advised to modify this
+        class but rather the containers within this class. This class when
+        appended to the parent controlbar class will position the overlays. 
+    */
+  /**************************************************************************/
+  /* Captions                                                               */
+  /**************************************************************************/
+  /**************************************************************************/
+  /* Icon Tooltips                                                          */
+  /**************************************************************************/
+  /*
+        Icon tooltips are menus that appear when hovering over an one of the
+        icon interface elements.
+
+        HTML-Example:
+        <div class="jw-icon jw-icon-tooltip jw-icon-hd jw-button-color jw-reset">
+            <div class="jw-overlay jw-reset">
+                <ul class="jw-menu jw-background-color jw-reset">
+                    <li class="jw-text jw-option jw-item-0 jw-reset">720p</li>
+                    <li class="jw-text jw-option jw-item-1 jw-reset">576p</li>
+                    <li class="jw-text jw-option jw-item-2 jw-reset jw-active-option">480p</li>
+                    <li class="jw-text jw-option jw-item-3 jw-reset">360p</li>
+                    <li class="jw-text jw-option jw-item-4 jw-reset">240p</li>
+                </ul>
+            </div>
+        </div>
+    */
+  /*
+        This class is added to icons that open menus.
+    */
+  /*
+        This class is added to an unordered list for HD, CC, and audio-tracks menus.
+        And to a div for playlists.
+    */
+  /**************************************************************************/
+  /* Controls                                                               */
+  /**************************************************************************/
+  /*
+        All player controls are within the .jw-controls class. When JW Player is
+        set to controls: false, this entire class has a visibility of hidden.
+        To not include a specific item in your skin, you will need to override
+        the style with a visibility or display of none.
+
+        The controls section is split into Display, Controlbar, and Dock.
+    */
+  /**************************************************************************/
+  /* Slider (used for time and volume)                                      */
+  /**************************************************************************/
+  /*
+        The containers that hold the timeslider elements.
+    */ }
+  .jw-skin-pocket .jw-background-color {
+    background: rgba(51, 51, 51, 0.7); }
+  .jw-skin-pocket .jw-button-color {
+    color: #464646;
+    /*
+            This will adjust the color of all buttons when they are hovered on.
+        */ }
+    .jw-skin-pocket .jw-button-color:hover {
+      color: #000000; }
+  .jw-skin-pocket .jw-text {
+    color: #464646; }
+  .jw-skin-pocket .jw-toggle {
+    color: #000; }
+    .jw-skin-pocket .jw-toggle.jw-off {
+      color: #464646; }
+  .jw-skin-pocket .jw-title {
+    /*
+            This class is populated with content from the title configuration
+            option from the player setup.
+        */
+    /*
+            This class is populated with content from the description
+            configuration option in the player setup per-playlist item.
+        */ }
+  .jw-skin-pocket .jw-icon-tooltip {
+    /*
+            Show the underlying menu.
+        */ }
+  .jw-skin-pocket .jw-menu {
+    background: #333;
+    border: 0;
+    padding: .5em; }
+    .jw-skin-pocket .jw-menu .jw-option {
+      color: #bbbbbb;
+      /*
+                This sets the font color and background color for the active
+                item in HD, CC and audio-track menus. 
+            */ }
+      .jw-skin-pocket .jw-menu .jw-option.jw-active-option {
+        color: #fff; }
+      .jw-skin-pocket .jw-menu .jw-option:hover {
+        color: #fff; }
+  .jw-skin-pocket .jw-controls {
+    /**********************************************************************/
+    /* Controls - Display                                                 */
+    /**********************************************************************/
+    /*
+            Used to style the container in which the display icons are.
+        */
+    /**********************************************************************/
+    /* Controls - Controlbar                                              */
+    /**********************************************************************/
+    /**********************************************************************/
+    /* Controls - Controlbar                                              */
+    /**********************************************************************/
+    /*
+            This is the parent container that positions the dock elements.
+            In JW 7 the dock elements are on the upper right corner of the player.
+        */ }
+    .jw-skin-pocket .jw-controls .jw-display-icon-container {
+      border-radius: 0;
+      /*
+                Used to style icons that appear in the display container. The
+                icon that is rendered depends on the state the player is in.
+            */ }
+      .jw-skin-pocket .jw-controls .jw-display-icon-container .jw-icon-display {
+        color: rgba(238, 238, 238, 0.8); }
+      .jw-skin-pocket .jw-controls .jw-display-icon-container:hover {
+        background: #333; }
+        .jw-skin-pocket .jw-controls .jw-display-icon-container:hover .jw-icon-display {
+          color: #fff; }
+    .jw-skin-pocket .jw-controls .jw-controlbar {
+      background: rgba(0, 0, 0, 0.5);
+      /*
+                Used to vertically align the timeslider and all icons in the
+                center of the controlbar.
+            */ }
+      .jw-skin-pocket .jw-controls .jw-controlbar .jw-group {
+        /*
+                    All direct children of the left and right controlbar group
+                    will have one of the following classes:
+
+                        jw-icon-inline  - for standalone icons
+                        jw-icon-tooltip - for icons that have a submenu/tooltip
+                        jw-text-xyz     - for the both text elements
+                */
+        /**************************************************************/
+        /* Controls - Controlbar - left group                         */
+        /**************************************************************/
+        /*
+                    The left group contains playback controls, the visual
+                    playlist, and elapsed time:
+                */
+        /**************************************************************/
+        /* Controls - Controlbar - center group                       */
+        /**************************************************************/
+        /*
+                    The center group contains the elements that make up the timeslider.
+                */
+        /**************************************************************/
+        /* Controls - Controlbar - right group                        */
+        /**************************************************************/ }
+        .jw-skin-pocket .jw-controls .jw-controlbar .jw-group .jw-icon-inline,
+        .jw-skin-pocket .jw-controls .jw-controlbar .jw-group .jw-icon-tooltip,
+        .jw-skin-pocket .jw-controls .jw-controlbar .jw-group .jw-text-elapsed,
+        .jw-skin-pocket .jw-controls .jw-controlbar .jw-group .jw-text-duration {
+          padding: 0 .25em; }
+        .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-left-group {
+          /*
+                        The container that holds the play/pause icons. The icon
+                        is switched depending on the state the player is in.
+                    */
+          /*
+                        The control to toggle to the previous playlist item.
+                    */
+          /*
+                        The control to toggle to the next playlist item.
+                    */
+          /*
+                        The container for the elapsed video duration.
+                    */
+          /*
+                        The container for the visual playlist icon. The player
+                        will add the visual playlist overlay automatically when
+                        this element is hovered over.
+                    */ }
+          .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-left-group .jw-icon-playlist .jw-playlist-container {
+            padding: 0;
+            left: -42%;
+            background-color: #fff; }
+            .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-left-group .jw-icon-playlist .jw-playlist-container .jw-tooltip-title {
+              color: #464646;
+              border-bottom: 1px solid #000;
+              background-color: #ececec; }
+            .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-left-group .jw-icon-playlist .jw-playlist-container .jw-playlist .jw-option {
+              border-bottom: 1px solid #ececec;
+              background-color: #fff;
+              padding-right: 1em;
+              color: #464646; }
+              .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-left-group .jw-icon-playlist .jw-playlist-container .jw-playlist .jw-option:hover, .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-left-group .jw-icon-playlist .jw-playlist-container .jw-playlist .jw-option.jw-active-option {
+                background-color: #ececec;
+                color: #000; }
+        .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-center-group .jw-slider-time .jw-time-tip {
+          background: #333;
+          border: 0;
+          padding: .5em;
+          bottom: 1em; }
+          .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-center-group .jw-slider-time .jw-time-tip .jw-text {
+            color: #bbb; }
+        .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-right-group {
+          /*
+                        Wrapper for the total duration of the file being played.
+                        This allows you style both current time and duration
+                        differently.
+                    */
+          /*
+                        This is the class assigned to the div contains the HD
+                        icon. The player will automatically add a menu to the
+                        hover state of this div if there are more than 2 qualities
+                        provided per playlist item. Otherwise this div will have
+                        a state class .jw-toggle to indicate it was toggled on.
+                    */
+          /*
+                        This is class assigned to the div contains the closed-caption
+                        CC icon. The player will automatically add a menu to the
+                        hover state of this div if there are more than 2 caption 
+                        racks per playlist item. Otherwise this div will have a
+                        state class .jw-toggle to indicate it was toggled on.
+                    */
+          /*
+                        This is class assigned to the div contains the multiple
+                        audiotracks icon. The player will automatically add a menu
+                        to the hover state of this div if there are more than 2
+                        qualities provided per playlist item.
+                    */
+          /*
+                        This is class assigned to the div contains the volume
+                        icon. The player will automatically add a menu to the
+                        hover state of this div that contains the slider volume.
+                    */
+          /*
+                        This is class assigned to the div contains the fullscreen
+                        icons.
+                    */
+          /*
+                        This class is used to display the Chromecast icon.
+                    */ }
+          .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-right-group .jw-icon-volume {
+            /*
+                            When the player is muted the .jw-off class gets
+                            added to toggle the volume off icon.
+                        */ }
+            .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-right-group .jw-icon-volume.jw-volume-tip {
+              background: #333;
+              border: 0;
+              padding: .5em; }
+          .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-right-group .jw-icon-fullscreen {
+            /*
+                            The player will add .jw-off class to toggle between
+                            fullscreen and exit fullscreen icons.
+                        */ }
+    .jw-skin-pocket .jw-controls .jw-controls-right {
+      /*
+                This is the container that houses all of the dock buttons.
+            */
+      /*
+                This is the class assigned to the div to style the interface
+                button for dock elements.
+            */ }
+      .jw-skin-pocket .jw-controls .jw-controls-right .jw-dock-button {
+        background: rgba(51, 51, 51, 0.7);
+        border-radius: 0; }
+        .jw-skin-pocket .jw-controls .jw-controls-right .jw-dock-button:hover {
+          background: #333; }
+        .jw-skin-pocket .jw-controls .jw-controls-right .jw-dock-button .jw-text {
+          color: #bbb; }
+  .jw-skin-pocket .jw-slider-container {
+    /*
+            Sets the style for the base layer of the slider.
+        */
+    /*
+            Sets the style for the how much of video has been buffered,
+            which is layered on top of .jw-rail.
+        */
+    /*
+            Sets the style for the elapsed video, which is layered
+            on top of .jw-buffer.
+        */
+    /*
+            This marks the tip of the progress rail, used to
+            indicate where playback is currently.
+        */ }
+    .jw-skin-pocket .jw-slider-container .jw-rail {
+      background: #b8b6b7; }
+    .jw-skin-pocket .jw-slider-container .jw-buffer {
+      background: #9c9a9d; }
+    .jw-skin-pocket .jw-slider-container .jw-progress {
+      background: #000; }
+    .jw-skin-pocket .jw-slider-container .jw-knob {
+      color: #464646; }
+  .jw-skin-pocket .jw-slider-horizontal {
+    background: transparent; }
+    .jw-skin-pocket .jw-slider-horizontal .jw-slider-container {
+      height: .9em;
+      /*
+                This class is used for timeslider cuepoints, like
+                chapters and ad breaks.
+            */ }
+      .jw-skin-pocket .jw-slider-horizontal .jw-slider-container .jw-rail,
+      .jw-skin-pocket .jw-slider-horizontal .jw-slider-container .jw-buffer,
+      .jw-skin-pocket .jw-slider-horizontal .jw-slider-container .jw-progress {
+        height: .2em;
+        border-radius: 0; }
+      .jw-skin-pocket .jw-slider-horizontal .jw-slider-container .jw-rail {
+        box-shadow: none; }
+      .jw-skin-pocket .jw-slider-horizontal .jw-slider-container .jw-knob {
+        top: -0.4em;
+        margin: 0;
+        margin-left: -0.5em;
+        background-color: #000;
+        border-radius: 0;
+        width: 1px;
+        height: 1em; }
+      .jw-skin-pocket .jw-slider-horizontal .jw-slider-container .jw-cue {
+        top: -0.1em;
+        width: .1em;
+        height: .4em;
+        background-color: #000;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff; }
+  .jw-skin-pocket .jw-slider-vertical .jw-slider-container .jw-rail,
+  .jw-skin-pocket .jw-slider-vertical .jw-slider-container .jw-progress {
+    width: .2em; }
+  .jw-skin-pocket .jw-slider-vertical .jw-slider-container .jw-progress {
+    background: #fff; }
+  .jw-skin-pocket .jw-slider-vertical .jw-slider-container .jw-rail {
+    background: #737373; }
+  .jw-skin-pocket .jw-slider-vertical .jw-slider-container .jw-knob {
+    margin-bottom: -1px;
+    width: .6em;
+    background: linear-gradient(to bottom, #fff 0, #fff 30%, #333 100%);
+    border-radius: 0;
+    height: 2px;
+    width: 100%; }

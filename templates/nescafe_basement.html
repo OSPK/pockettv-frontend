@@ -13,8 +13,26 @@
 <div class="container-fluid" style="background:black;">
     <h3 class="text-white">Episode x</h3>
     <div id="channel_landing" class="row row-eq-height player-cont no-pad">
-        <div class="player_container">
-            <script src="//content.jwplatform.com/players/mehQh2nv-jmwSY1dq.js"></script>
+        <div id="playa" class="player_container">
+            <script src="/static/js/jwplayer.js"></script>
+            <script>
+                jwplayer.key="TFZs9is8ZltKH+LdlBiXFgi8B5ebtELQHrXOfk5s9wE=";
+                jwplayer('playa').setup({
+                    "file": "/static/vid.mp4",
+                    "width": "100%",
+                    "aspectratio": "16:9",
+                    "logo": {
+                            "file": '/static/images/logo-white-small.png',
+                            "hide":true,
+                            "position":'top-left'
+                            //link: 'http://pockettv.com.pk'
+                        },
+                    "skin" : {
+                    "url":"/static/css/skin.scss.css",
+                    "name": "pocket"
+                    }
+                });
+            </script>
         </div>
     </div>
 </div>
