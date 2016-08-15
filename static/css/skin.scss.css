@@ -276,7 +276,17 @@
         .jw-skin-pocket .jw-controls .jw-display-icon-container:hover .jw-icon-display {
           color: #fff; }
     .jw-skin-pocket .jw-controls .jw-controlbar {
-      background: rgba(0, 0, 0, 0.5);
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+      background: -moz-linear-gradient(top, transparent 0%, black 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, transparent 0%, black 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, transparent 0%, black 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+      /* IE6-9 */
+      padding-bottom: 1.5em;
+      padding-top: 0em;
       /*
                 Used to vertically align the timeslider and all icons in the
                 center of the controlbar.
@@ -421,6 +431,8 @@
         .jw-skin-pocket .jw-controls .jw-controls-right .jw-dock-button .jw-text {
           color: #bbb; }
   .jw-skin-pocket .jw-slider-container {
+    position: absolute;
+    top: 0px;
     /*
             Sets the style for the base layer of the slider.
         */
