@@ -234,16 +234,29 @@
   .jw-skin-pocket .jw-overlay {
     border: 0px solid transparent; }
   .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container {
-    padding: 0px;
+    padding: 0px !important;
+    margin: 0px;
     background: rgba(0, 0, 0, 0.2); }
+    @media (max-width: 768px) {
+      .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-embed .jw-sharing-icon-embed {
+        font-size: 0.5em; } }
     .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-embed textarea {
       background-color: black;
       background-color: rgba(150, 150, 150, 0.6);
       color: #222; }
+      @media (max-width: 768px) {
+        .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-embed textarea {
+          font-size: 0.5em; } }
+    @media (max-width: 768px) {
+      .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-link .jw-sharing-icon-link {
+        font-size: 0.5em; } }
     .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-link textarea {
       background-color: black;
       background-color: rgba(150, 150, 150, 0.6);
       color: #222; }
+      @media (max-width: 768px) {
+        .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-link textarea {
+          font-size: 0.5em; } }
     .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-close-icon {
       position: absolute;
       right: 1em;
@@ -256,7 +269,8 @@
       zoom: 2; }
       @media (max-width: 768px) {
         .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-methods {
-          zoom: 1; } }
+          zoom: 1;
+          font-size: 0.5em; } }
       .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-methods img {
         width: 2em; }
   .jw-skin-pocket .jw-icon-tooltip {
@@ -324,6 +338,7 @@
             */ }
       @media (max-width: 768px) {
         .jw-skin-pocket .jw-controls .jw-controlbar {
+          zoom: 0.5;
           padding-bottom: 0px;
           padding-top: 0.6em;
           margin-bottom: 0px; } }
@@ -378,6 +393,9 @@
                     */ }
           .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-left-group .jw-icon-playback {
             font-size: 1.4em; }
+            @media (max-width: 768px) {
+              .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-left-group .jw-icon-playback {
+                zoom: 0.5; } }
           .jw-skin-pocket .jw-controls .jw-controlbar .jw-group.jw-controlbar-left-group .jw-icon-playlist .jw-playlist-container {
             padding: 0;
             left: -42%;

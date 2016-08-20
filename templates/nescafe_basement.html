@@ -29,7 +29,7 @@
                             //link: 'http://pockettv.com.pk'
                         },
                     "skin" : {
-                    "url":"/static/css/skin.scss.css",
+                    "url":"/static/css/skin.scss.css?{{random()}}",
                     "name": "pocket"
                     },
                     "sharing" : {
@@ -39,6 +39,7 @@
                         "sites": ['facebook','twitter','reddit']
                     }
                 });
+                alert( 'Your screen resolution is ' + screen.width + 'x' + screen.height );
             </script>
         </div>
     </div>

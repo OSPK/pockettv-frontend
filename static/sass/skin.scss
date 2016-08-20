@@ -270,20 +270,37 @@ $mobile-width: 768px;
     .jw-plugin-sharing {
 
         .jw-sharing-container {
-            padding:0px;
+            padding:0px!important;
+            margin:0px;
             background: rgba(0,0,0,0.2);
             .jw-sharing-embed {
+                .jw-sharing-icon-embed {
+                    @media (max-width: #{$mobile-width}) {
+                        font-size: 0.5em;
+                    }
+                }
                 textarea {
                     background-color: black;
                     background-color: rgba(150,150,150,0.6);
                     color:#222;
+                    @media (max-width: #{$mobile-width}) {
+                        font-size: 0.5em;
+                    }
                 }
             }
             .jw-sharing-link {
+                .jw-sharing-icon-link {
+                    @media (max-width: #{$mobile-width}) {
+                        font-size: 0.5em;
+                    }
+                }
                 textarea {
                     background-color: black;
                     background-color: rgba(150,150,150,0.6);
                     color:#222;
+                    @media (max-width: #{$mobile-width}) {
+                        font-size: 0.5em;
+                    }
                 }
             }
             .jw-sharing-close-icon {
@@ -299,6 +316,7 @@ $mobile-width: 768px;
                 zoom:2;
                 @media (max-width: #{$mobile-width}) {
                     zoom:1;
+                    font-size: 0.5em;
                 }
 
                 img {
@@ -430,6 +448,7 @@ $mobile-width: 768px;
             padding-bottom:0.7em;
             padding-top:1.2em;
             @media (max-width: #{$mobile-width}) {
+                zoom:0.5;
                 padding-bottom:0px;
                 padding-top:0.6em;
                 margin-bottom:0px;
@@ -473,6 +492,9 @@ $mobile-width: 768px;
                     */
                     .jw-icon-playback{
                         font-size: 1.4em;
+                        @media (max-width: #{$mobile-width}) {
+                            zoom:0.5;
+                        }
                     }
 
                     /*
