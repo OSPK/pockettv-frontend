@@ -6554,7 +6554,7 @@ select.genre {
     border-bottom: 1px solid #ccc; }
     #fake_menu li:hover {
       background: #aaa;
-      background: rgba(50, 50, 50, 0.9); }
+      background: rgba(150, 150, 150, 0.8); }
     #fake_menu li a {
       color: white;
       font-size: 0.7em; }
