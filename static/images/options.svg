@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:docname="options.svg"
+   viewBox="0 0 100 100"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   width="100%"
+   height="100%">
+  <defs
+     id="defs9" />
+  <title
+     id="title5819">Gear as symbol for option button</title>
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="37"
+     pagecolor="#ffffff"
+     inkscape:window-height="985"
+     inkscape:window-maximized="0"
+     inkscape:zoom="5.9229774"
+     inkscape:window-x="0"
+     showgrid="false"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="10.1119"
+     inkscape:cy="58.321246"
+     inkscape:window-width="1276"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px" />
+  <g
+     id="layer1"
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     transform="translate(0 -952.36)">
+    <path
+       id="path2989"
+       style="fill:#fbfbfb"
+       inkscape:connector-curvature="0"
+       d="m 50.005591,975.97965 c -1.521045,0 -3.013662,0.13679 -4.464243,0.38402 l -0.708017,7.50053 c -1.500212,0.41818 -2.920096,1.0029 -4.248209,1.75211 l -5.796416,-4.78824 c -2.448261,1.73312 -4.591458,3.86387 -6.32437,6.31224 l 4.800213,5.79642 c -0.748312,1.32653 -1.345992,2.75 -1.764083,4.2482 l -7.487873,0.71203 c -0.247326,1.45042 -0.383966,2.94304 -0.383966,4.47784 0,1.5241 0.135796,3.0108 0.384019,4.4642 l 7.4884,0.7081 c 0.418112,1.4982 1.015824,2.9217 1.764083,4.2482 l -4.78824,5.7964 c 1.729747,2.4417 3.858704,4.5825 6.300108,6.3123 l 5.808547,-4.8003 c 1.328957,0.7498 2.746942,1.3457 4.248209,1.7641 l 0.708017,7.5005 c 1.450581,0.2473 2.943198,0.3721 4.464243,0.3721 1.520992,0 3.001636,-0.1248 4.452217,-0.3721 l 0.708017,-7.5005 c 1.50132,-0.4184 2.919253,-1.0143 4.248209,-1.7641 l 5.808547,4.8003 c 2.441615,-1.7299 4.570572,-3.8707 6.300108,-6.3123 l -4.78824,-5.7964 c 0.748312,-1.3265 1.345992,-2.75 1.764083,-4.2482 l 7.4884,-0.7081 c 0.248223,-1.4534 0.384019,-2.9401 0.384019,-4.4642 0,-1.5215 -0.13664,-3.01323 -0.384019,-4.46423 l -7.4884,-0.70802 c -0.418112,-1.49821 -1.015823,-2.92168 -1.764083,-4.24821 l 4.800213,-5.79641 c -1.732859,-2.44848 -3.876057,-4.57917 -6.32437,-6.31224 l -5.796416,4.78824 c -1.328113,-0.74921 -2.747997,-1.33392 -4.248209,-1.75211 l -0.708017,-7.50053 c -1.450581,-0.24723 -2.931225,-0.38402 -4.452217,-0.38402 z m 0,16.33281 c 5.546416,0 10.032705,4.4979 10.032705,10.04434 0,5.5464 -4.48592,10.0443 -10.032705,10.0443 -5.546416,0 -10.044309,-4.4979 -10.044309,-10.0443 0,-5.54644 4.497893,-10.04434 10.044309,-10.04434 z" />
+  </g>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

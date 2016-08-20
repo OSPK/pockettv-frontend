@@ -37,9 +37,30 @@
                         "code": '<iframe src="http://example.com/12345.html"  width="480"  height="270"  frameborder="0"  scrolling="auto" />',
                         "heading": "",
                         "sites": ['facebook','twitter','reddit']
-                    }
+                    },
+                    "abouttext": "PocketTV",
+                    "aboutlink": "http://smart.pockettv.pk"
                 });
-                alert( 'Your screen resolution is ' + screen.width + 'x' + screen.height );
+
+                jwplayer().addButton(
+                    "/static/images/options.svg",
+                    "",
+                    function(){
+                        var menu = document.getElementById("fake_menu");
+                        if (!menu) {
+                            var div = document.createElement("div");
+                            div.setAttribute("id", "fake_menu");
+                            div.innerHTML = "<li><a href=''>240p</a></li><li><a href=''>3600p</a></li><li><a href=''>480p</a></li><li><a href=''>HD</a></li>";
+                            document.getElementById("playa").appendChild(div);
+                        }
+                        else {
+                            document.getElementById("fake_menu").remove();
+                        };
+                        
+                    },
+                    "fake_menu"
+                );
+                //alert( 'Your screen resolution is ' + screen.width + 'x' + screen.height );
             </script>
         </div>
     </div>

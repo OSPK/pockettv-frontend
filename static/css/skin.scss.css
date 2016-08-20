@@ -209,6 +209,8 @@
     */ }
   .jw-skin-pocket .jw-background-color {
     background: rgba(51, 51, 51, 0.7); }
+  .jw-skin-pocket .jw-dock-button[button="fake_menu"] {
+    border: 1px solid red; }
   .jw-skin-pocket .jw-button-color {
     color: rgba(255, 255, 255, 0.7);
     /*
@@ -236,17 +238,14 @@
   .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container {
     padding: 0px !important;
     margin: 0px;
-    background: rgba(0, 0, 0, 0.2); }
-    @media (max-width: 768px) {
-      .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-embed .jw-sharing-icon-embed {
-        font-size: 0.5em; } }
-    .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-embed textarea {
-      background-color: black;
-      background-color: rgba(150, 150, 150, 0.6);
-      color: #222; }
+    background: rgba(0, 0, 0, 0.5); }
+    .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-methods {
+      zoom: 2; }
       @media (max-width: 768px) {
-        .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-embed textarea {
-          font-size: 0.5em; } }
+        .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-methods {
+          top: 1px;
+          zoom: 1;
+          font-size: 0.6em; } }
     @media (max-width: 768px) {
       .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-link .jw-sharing-icon-link {
         font-size: 0.5em; } }
@@ -257,6 +256,16 @@
       @media (max-width: 768px) {
         .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-link textarea {
           font-size: 0.5em; } }
+    @media (max-width: 768px) {
+      .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-embed .jw-sharing-icon-embed {
+        font-size: 0.5em; } }
+    .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-embed textarea {
+      background-color: black;
+      background-color: rgba(150, 150, 150, 0.6);
+      color: #222; }
+      @media (max-width: 768px) {
+        .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-embed textarea {
+          font-size: 0.5em; } }
     .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-close-icon {
       position: absolute;
       right: 1em;
@@ -265,14 +274,6 @@
       @media (max-width: 768px) {
         .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-close-icon {
           zoom: 1; } }
-    .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-methods {
-      zoom: 2; }
-      @media (max-width: 768px) {
-        .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-methods {
-          zoom: 1;
-          font-size: 0.5em; } }
-      .jw-skin-pocket .jw-plugin-sharing .jw-sharing-container .jw-sharing-methods img {
-        width: 2em; }
   .jw-skin-pocket .jw-icon-tooltip {
     /*
             Show the underlying menu.
@@ -309,16 +310,19 @@
             In JW 7 the dock elements are on the upper right corner of the player.
         */ }
     .jw-skin-pocket .jw-controls .jw-display-icon-container {
-      border-radius: 0.2em;
+      border-radius: 1px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 2em;
       /*
                 Used to style icons that appear in the display container. The
                 icon that is rendered depends on the state the player is in.
             */ }
-      .jw-skin-pocket .jw-controls .jw-display-icon-container .jw-icon-display {
-        color: rgba(238, 238, 238, 0.8); }
-      .jw-skin-pocket .jw-controls .jw-display-icon-container:hover {
-        background: rgba(0, 0, 0, 0.4); }
-        .jw-skin-pocket .jw-controls .jw-display-icon-container:hover .jw-icon-display {
+      @media (max-width: 768px) {
+        .jw-skin-pocket .jw-controls .jw-display-icon-container {
+          padding: 0.5em; } }
+      .jw-skin-pocket .jw-controls .jw-display-icon-container:hover, .jw-skin-pocket .jw-controls .jw-display-icon-container:focus {
+        background: rgba(0, 0, 0, 0.9); }
+        .jw-skin-pocket .jw-controls .jw-display-icon-container:hover .jw-icon-display, .jw-skin-pocket .jw-controls .jw-display-icon-container:focus .jw-icon-display {
           color: #fff; }
     .jw-skin-pocket .jw-controls .jw-controlbar {
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
