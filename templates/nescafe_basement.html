@@ -18,6 +18,7 @@
             <script>
                 jwplayer.key="TFZs9is8ZltKH+LdlBiXFgi8B5ebtELQHrXOfk5s9wE=";
                 jwplayer('playa').setup({
+                    "image": "/static/images/breakingbad.jpg",
                     "file": "/static/vid.mp4",
                     "width": "100%",
                     "aspectratio": "16:9",
@@ -30,6 +31,12 @@
                     "skin" : {
                     "url":"/static/css/skin.scss.css",
                     "name": "pocket"
+                    },
+                    "sharing" : {
+                        "link": "http://example.com/videos/12345",
+                        "code": '<iframe src="http://example.com/12345.html"  width="480"  height="270"  frameborder="0"  scrolling="auto" />',
+                        "heading": "",
+                        "sites": ['facebook','twitter','reddit']
                     }
                 });
             </script>
