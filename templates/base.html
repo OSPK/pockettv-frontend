@@ -24,7 +24,17 @@
 	</head>
 	<body class="site" onload="loaded()">
 		<div id="wrapper">
-			<a href="#menu-toggle" class="btn btn-lg btn-default" id="menu-toggle"><i class="glyphicon glyphicon-menu-hamburger"></i> Menu</a>
+			<div class="row top-menu navbar-fixed-top">
+				<div class="col-xs-4">
+					<a href="#" class="btn btn-lg btn-default item" id="menu-toggle"><i class="glyphicon glyphicon-menu-hamburger"></i> Menu</a>
+				</div>
+				<div class="col-xs-4">
+					<a href="/channels" class="btn btn-lg btn-default item"><i class="glyphicon glyphicon-facetime-video"></i> Live Tv</a>
+				</div>
+				<div class="col-xs-4">
+					<a href="/vodcat" class="btn btn-lg btn-default item"><i class="glyphicon glyphicon-triangle-right"></i> Videos</a>
+				</div>
+			</div>
 			{% include 'navbar.html' %}
 
 			<div id="search">
@@ -120,7 +130,7 @@
 		<!-- bootstrap-image-gallery.js -->
 		<script src="/static/js/bootstrap-image-gallery.js"></script>
 		<!-- JavaScript -->
-		<script src="/static/js/scripts.js"></script>
+		<script src="/static/js/scripts.js?{{random()}}"></script>
 
 		{% block footer_scripts %}
 		{% endblock %}

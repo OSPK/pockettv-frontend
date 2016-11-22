@@ -17,7 +17,8 @@
             <script src="/static/js/jwplayer.js"></script>
             <script>
                 jwplayer.key="TFZs9is8ZltKH+LdlBiXFgi8B5ebtELQHrXOfk5s9wE=";
-                jwplayer('playa').setup({
+                var player=jwplayer('playa');
+                player.setup({
                     "image": "/static/images/169-1.jpg",
                     "file": "/static/vid.mp4",
                     "width": "100%",
@@ -42,25 +43,29 @@
                     "aboutlink": "http://smart.pockettv.pk"
                 });
 
-                jwplayer().addButton(
+                player.addButton(
                     "/static/images/options.svg",
-                    "",
+                    "Video Quality",
                     function(){
                         var menu = document.getElementById("fake_menu");
                         if (!menu) {
                             var div = document.createElement("div");
                             div.setAttribute("id", "fake_menu");
-                            div.innerHTML = "<li><a href=''>240p</a></li><li><a href=''>3600p</a></li><li><a href=''>480p</a></li><li><a href=''>HD</a></li>";
+                            div.innerHTML = "<a href=''><li class='xx1'>240p</li></a>\
+                            <a href=''><li class='xx1'>360p</li></a>\
+                            <a href=''><li class='xx1'>480p</li></a>\
+                            <a href=''><li class='xx1'>HD</li></a>";
                             document.getElementById("playa").appendChild(div);
+                            console.log("created");
                         }
                         else {
-                            document.getElementById("fake_menu").remove();
+                            menu.remove();
+                            console.log("removed");
                         };
                         
                     },
                     "fake_menu"
                 );
-                //alert( 'Your screen resolution is ' + screen.width + 'x' + screen.height );
             </script>
         </div>
     </div>

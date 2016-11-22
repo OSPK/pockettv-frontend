@@ -16,9 +16,9 @@ $(document).ready(function() {
         pagination: false,
         navigation: true,
         navigationText: ["<i class='glyphicon glyphicon-chevron-left'></i>","<i class='glyphicon glyphicon-chevron-right'></i>"],
-        items: 5.3,
-        itemsDesktop: [1199, 5.3],
-        itemsDesktopSmall: [979, 4.3],
+        items: 4.3,
+        itemsDesktop: [1199, 4.3],
+        itemsDesktopSmall: [979, 3.3],
         itemsTablet: [768, 3.3],
         itemsMobile: [479, 2.3]
 
@@ -61,7 +61,10 @@ $(function () {
     })
 });
 
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
+// $("#menu-toggle").click(function(e) {
+//     e.preventDefault();
+//     $("#sidebar-wrapper").toggleClass("toggled");
+// });
+$( "#menu-toggle" ).on( "click", function() {
+  $("#sidebar-wrapper").toggleClass("toggled");
 });
